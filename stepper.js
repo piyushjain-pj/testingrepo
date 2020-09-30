@@ -25,6 +25,7 @@ movemybar(n)
 
 ///Moving bar
 function movemybar(n) {
+        var elem1 = document.getElementById("progressbarcount-mobile");
         var elem = document.getElementById("progressbarcount");
         var width = 0
         if (n == 0) {
@@ -32,7 +33,11 @@ function movemybar(n) {
             width=0
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
+
+
 
         }
         else if (n == 1) {
@@ -40,6 +45,8 @@ function movemybar(n) {
             width = 20
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
 
         }
@@ -48,7 +55,10 @@ function movemybar(n) {
             width = 40
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
+           
 
         }
         else if (n == 3) {
@@ -56,6 +66,8 @@ function movemybar(n) {
             width = 60
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
 
         }
@@ -64,6 +76,8 @@ function movemybar(n) {
             width = 80
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
 
         }
@@ -72,13 +86,10 @@ function movemybar(n) {
             width = 100
             elem.style.width = width + "%";
             elem.innerHTML = width + "%";
+            elem1.style.width = width + "%";
+            elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width
-
         }
-
-
-
-
     }
 
 function getTab(n) {
@@ -138,6 +149,16 @@ function getTab(n) {
     }
 }
 
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
@@ -154,6 +175,7 @@ function nextPrev(n) {
     return false;
   }
   // Otherwise, display the correct tab:
+  topFunction()
   showTab(currentTab);
 }
 

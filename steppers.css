@@ -4,6 +4,11 @@ body {
     }
 /*This Media query is for Desktop*/
 @media (min-width: 1000px){
+
+    .hide-in-desktop{
+        display: none;
+
+    }
     .btn-lg-preview {
         -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
@@ -112,15 +117,15 @@ body {
 
 
 /*This Media is for tablets and Mobile phones*/
-@media (max-width: 1000px){
-    .btn-lg-preview {
-        -ms-flex: 0 0 8.333333%;
-        flex: 0 0 8.333333%;
-        max-width: 100.12%;
-        position: absolute;
-        right: 6px;
-        top: -50px;
+
+@media (max-width: 500px){
+        .btn-preview  {
+            right: 0%;
                   }
+
+}
+@media (max-width: 1000px){
+
     .progress-bar {
         display: -ms-flexbox;
         display: flex;
@@ -165,8 +170,8 @@ body {
             font-weight: 600;
         }
         .progress-bar-Mobile{
-                height: 6px!important;
-                width:300px!important;
+                height: 8px!important;
+                width:100%!important;
             }
         #nextBtn,#prevBtn {
             background-color: #4CAF50;
