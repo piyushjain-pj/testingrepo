@@ -1,0 +1,137 @@
+.app-inner {
+    color: #464646;
+    background-color: #f2f2f2;
+}
+
+#finishBtn{
+    display: none;
+}
+@media (min-width: 900px) {
+.container-custom{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+.col-lg-2-custom{
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 192px;
+}
+
+
+.fixleftside {
+    flex: 0 0 16.666667%;
+    max-width: 14.666667%;
+    margin-left: auto;}
+    .btn-lg-preview  {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: -0.666667%;
+    position: absolute;
+    right: 4px;
+}}
+
+/*.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1;
+    color: #495057;
+    background-color: #2ecab5c9;
+}*/
+.underinfo{
+ border: 1px solid  #d4d1d1;  
+ border-radius: 1%;
+}
+
+.fixleftside p  {
+    font-size: 10px;
+    color: #464646;
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.btn-mp {
+    font-size: 10px;
+    padding: 11px 13px 11px 13px!important;
+}
+.fixleftside i  {
+    font-size: 30px;
+    color: #a39d9d;
+
+}
+
+.file-upload {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 50%;
+    height: 100px;
+    margin: 50px auto;
+    background-color: #999f9f!important;
+    height: 200px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #ccc;
+}
+
+input[type="file"] {
+    appearance: initial;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    height: 30px;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+}
+.file-upload-wrapper .card.card-body input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#addnewproperty label{
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+     
+}
+.form-head-text{
+    margin-top: 2px;
+    margin-bottom: 0rem;
+    font-size: 19px;
+    font-weight: 900;
+    color: #08a396;
+}
+    
+     
+input:focus,select:focus {
+
+    box-shadow: 1px #464646 !important;
+    border: 1px solid #2ecab5c9 !important;
+    outline-width: 1px !important
+}
+
+.list-group-item.active {
+    z-index: 0;
+    color: #000;
+    background-color: #0addcb!important;
+    border-color: #69d9cac9!important;
+}

@@ -1,0 +1,224 @@
+/*This CSS for both desktop and Mobile phones*/
+body {
+    background-color: #f1f1f1;
+    }
+/*This Media query is for Desktop*/
+@media (min-width: 1000px){
+    .btn-lg-preview {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 100.12%;
+        position: absolute;
+        right: 21px;
+        top: 9px;
+                  }
+    .progress-bar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center; 
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #2ECAB6;
+        transition: width .6s ease;
+        }
+    .progress {
+        display: -ms-flexbox;
+        display: flex;
+        height: 1rem;
+        overflow: hidden;
+        line-height: 0;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: 0!important;
+    }
+    .progress-bar-Mobile{
+        height: 6px;
+        width:350px;
+        margin: 0px 0px 0px 225px;
+    }
+    
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+        border-radius: 0px;
+        border: 1px solid #ec3709cf;
+        }
+
+        /* Hide all steps by default: */
+        .tab {
+            display: none;
+        }
+        #progressspan{
+            font-size: 13px;
+            font-weight: 600;    
+        }
+        #progressbarcount{
+             font-size: 7px;
+            font-weight: 600;
+        }
+        #nextBtn,#prevBtn {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-family: Raleway;
+            cursor: pointer;
+            border-radius: 3%;
+        }
+        #nextBtn:hover {
+            opacity: 0.8;
+        }
+    
+        #prevBtn {
+            background-color: #4d4a4a;
+        }
+        #prevBtn:hover {
+         opacity: 0.8;
+        }
+        .step-side{
+        z-index: 1;
+        color: #495057;
+        background-color: white;
+
+        }
+        .step-side.active{
+            opacity: 2;
+        }
+        .step-side.finish {
+            background-color: rgb(3, 168, 160);
+        }
+        /* Make circles that indicate the steps of the form: */
+        .step {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbbbbb;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+            background-color: #6479c8;
+        }
+}
+
+
+
+/*This Media is for tablets and Mobile phones*/
+@media (max-width: 1000px){
+    .btn-lg-preview {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 100.12%;
+        position: absolute;
+        right: 6px;
+        top: -50px;
+                  }
+    .progress-bar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center; 
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #2ECAB6;
+        transition: width .6s ease;
+        }
+    .progress {
+        display: -ms-flexbox;
+        display: flex;
+        height: 1rem;
+        overflow: hidden;
+        line-height: 0;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: 0!important;
+    }
+    
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+        border-radius: 0px;
+        border: 1px solid #ec3709cf;
+        }
+
+        /* Hide all steps by default: */
+        .tab {
+            display: none;
+        }
+        #progressspan{
+            font-size: 13px;
+            font-weight: 600;    
+        }
+        #progressbarcount{
+             font-size: 7px;
+            font-weight: 600;
+        }
+        .progress-bar-Mobile{
+                height: 6px!important;
+                width:300px!important;
+            }
+        #nextBtn,#prevBtn {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-family: Raleway;
+            cursor: pointer;
+            border-radius: 3%;
+        }
+        #nextBtn:hover {
+            opacity: 0.8;
+        }
+    
+        #prevBtn {
+            background-color: #4d4a4a;
+        }
+        #prevBtn:hover {
+         opacity: 0.8;
+        }
+        .step-side{
+        z-index: 1;
+        color: #495057;
+        background-color: white;
+
+        }
+        .step-side.active{
+            opacity: 2;
+        }
+        .step-side.finish {
+            background-color: rgb(3, 168, 160);
+        }
+        /* Make circles that indicate the steps of the form: */
+        .step {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbbbbb;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+            background-color: #6479c8;
+        }
+        .fixleftside {
+
+            }
+        .hide-in-mobile {
+            display: none
+        }
+}

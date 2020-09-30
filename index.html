@@ -1,0 +1,617 @@
+        <form id="addnewproperty" action="action.html">
+            <!--Property details Section-->
+            <div class="tab">
+                <!-- Heading -->
+                <div class="py-3 px-5 font-weight-bold text-default">
+                    <p class="form-head-text">Property details </p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="row mx-2 px-5">
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">Apartment Type*</label>
+                        <select name="apartmenttype" class="custom-select  mb-3">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label class="mr-sm-2" for="inlineFormCustomSelect1">BHK Type*</label>
+                        <select name="bhktype" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect1">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label class="mdb-main-label">Property Age*</label>
+                        <select name="propertyage" class="custom-select  mb-3">
+                            <option selected>Choose...</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label for="inlineFormInputGroupUsername">Property Size*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-ruler-combined"></i>
+                                </div>
+                            </div>
+                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Property in Sq.ft">
+                        </div>
+                        <!--/Blue select-->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="py-5">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Floor*</label>
+                            <select name="floor" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Total Floor*</label>
+                            <select name="totalfloor" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Facing</label>
+                            <select name="propertyfacing" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Property details Section-->
+
+
+
+
+            <!--Location details Section-->
+            <div class="tab">
+                <!-- Heading -->
+                <div class="py-3 px-5 font-weight-bold text-default">
+                    <p class="form-head-text">Locality Details</p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="row p-3 mx-2 px-5 mb-5">
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">City *</label>
+                        <select name="propertycity" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label for="inlineFormInputGroupUsername">Street Area*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text">₹</div>
+                            </div>
+                            <input name="streetarea" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Property in Sq.ft">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <label for="inlineFormInputGroupUsername">Locality*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-map-marker"></i></div>
+                            </div>
+                            <input name="locality" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Property in Sq.ft">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End location details Section-->
+
+
+            
+
+
+                    <!--Rental details Section-->
+                    <div class="tab">
+                        <div class="py-3 px-5 font-weight-bold text-default">
+                            <p class="form-head-text">Provide Rental Details About your Property.</p>
+                        </div>
+                        <hr class="w-100 py-2 p-0 m-0">
+                        <div class="row mx-2 p-3 px-5 mb-5">
+                            <div class="col-lg-6">
+                                <label>property available for*</label><br>
+                                <div class="custom-control custom-radio custom-control-inline" >
+                            <input name=" propertyavailablefor" type="radio" class="custom-control-input"
+                                    id="defaultChecked1" name="defaultExample2">
+                                    <label class="custom-control-label" for="defaultChecked1">Rental Only</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input name="propertyavailablefor" type="radio" class="custom-control-input"
+                                        id="defaultChecked2" name="defaultExample2">
+                                    <label class="custom-control-label" for="defaultChecked2">Lease Only</label>
+                                </div>
+                                <br>
+                                <br>
+                                <label for="inlineFormInputGrouprentpermonth">Expected Rent*</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <div class="bg-white input-group-text">₹</div>
+                                    </div>
+                                    <input name="expectedrent" type="text" class="form-control"
+                                        id="inlineFormInputGrouprentpermonth" placeholder="Enter rent per month">
+                                </div>
+                                <!-- Default checked -->
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input name="negotiation" type="checkbox" class="custom-control-input"
+                                        id="defaultChecked3">
+                                    <label class="custom-control-label" for="defaultChecked3">Negotiation</label>
+                                </div>
+
+                                <label for="inlineFormInputGroupMaintenance" class="mdb-main-label">Maintenance
+                                    *</label>
+                                <select name="maintenance" id="inlineFormInputGroupMaintenance"
+                                    class="custom-select mb-2">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+
+                                <label for="inlineFormInputavailable">Available From*</label>
+                                <div class="input-group mb-3">
+                                    <input name="availablefor" type="date" name="propertymaintainance"
+                                        class="form-control" id="inlineFormInputavailable" placeholder="">
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-lg-6">
+                                <label for="inlineFormInputGroupUsername">Locality*</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <div class="bg-white input-group-text"><i class="fa fa-map-marker-alt"></i>
+                                        </div>
+                                    </div>
+                                    <input name="locality" type="text" class="form-control"
+                                        id="inlineFormInputGroupUsername" placeholder="area/landmark">
+                                </div>
+
+
+                                <label for="inlineFormInputFursuing" class="mdb-main-label">Furnishing *</label>
+                                <select name="furnshing" id="inlineFormInputFursuing" class="custom-select mb-4">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+
+                                <label for="inlineFormInputTenants" class="mdb-main-label">Preferred Tenants *</label>
+                                <select name="tenants" id="inlineFormInputTenants" class="custom-select mb-4">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+
+                                <label for="inlineFormInputParking" class="mdb-main-label">Parking *</label>
+                                <select name="parking" id="inlineFormInputParking" class="custom-select mb-4">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea2">Propetry Description</label>
+                                    <textarea name="description" class="form-control rounded-0"
+                                        id="exampleFormControlTextarea2" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Rental details Section-->
+
+
+        
+                    <!--Gallery details Section-->
+                    <div class="tab">
+                        <div class="py-3 px-5 font-weight-bold text-default">
+                            <p class="form-head-text">Uploads Your Property Picture </p>
+                        </div>
+                        <hr class="w-100 py-2 p-0 m-0">
+                        <div class="mx-5 bg-info py-5 mb-4 mt-4">
+                            <div class="file-upload-wrapper">
+                                <div class="input-group mb-4 px-5">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text  mb-1 pb-0 pt-1 px-1">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="fileInput"
+                                            aria-describedby="fileInput">
+                                        <label class="custom-file-label" for="fileInput">choose photo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="py-3 ">
+                        <center><span class="py-2 mb-2 text-info font-weight-bold h4 ">We can Upload photos on Your
+                                behalf </span>
+                        </center>
+                        <div class="row p-3">
+                            <div class="col-lg-6">
+                                <div class="border p-5">
+                                    <center>
+                                        <span class="fab fa-whatsapp fa-2x light-blue-text">
+                                        </span><span class="h5">Send Us on Whatsapp</span><br>
+                                        <hr class="p-1">
+                                        <span
+                                            class="text-center text-info font-weight-bold mx-auto">+91-0000-000-000</span>
+                                    </center>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border p-5">
+                                    <center>
+                                        <span class="far fa-envelope fa-2x light-blue-text">
+                                        </span><span class="h5">Send Us on Mail</span><br>
+                                        <hr class="p-1">
+                                        <span
+                                            class="text-center text-info font-weight-bold mx-auto">examplele@gmail.com</span>
+                                    </center>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--End details Section-->
+
+
+
+
+                    
+                    <!--Amenties details Section-->
+                    <div class="tab">
+                        <!-- Heading -->
+                        <div class="py-3 px-5 font-weight-bold text-default">
+                            <p class="form-head-text">Provide additional details about property get Maximum Visible</p>
+                        </div>
+                        <hr class="w-100 py-2 p-0 m-0">
+                        <div class="py-3 px-5">
+                            <div class="row">
+                                <div class="col-lg-4 ">
+                                    <label for="inlineFormInputNoBathroom">Bathrooms *</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="bg-white input-group-text"><i class="fa fa-bath"></i></div>
+                                        </div>
+                                        <input name="noofbath" type="number" class="form-control"
+                                            id="inlineFormInputNoBathroom" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 ">
+                                    <label for="inlineFormInputGroupNoBalcony">Balcony *</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="bg-white input-group-text"><i class="fa fa-person-booth"></i>
+                                            </div>
+                                        </div>
+                                        <input type="number" name="noofbalcony" class="form-control"
+                                            id="inlineFormInputGroupNoBalcony" placeholder="0">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <!--Blue select-->
+                                    <label class="mdb-main-label">Water Supply *</label>
+                                    <select class="custom-select mb-4">
+                                        <option name="watersupply" selected>Choose...</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <!--Blue select-->
+                                    <label class="mdb-main-label">Gym *</label>
+                                    <select class="custom-select mb-4">
+                                        <option name="gym" selected>Choose...</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <!--Blue select-->
+                                    <label class="mdb-main-label">Non-Veg Allowed *</label>
+                                    <select name="non-veg" class="custom-select mb-4">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <!--Blue select-->
+                                    <label class="mdb-main-label">Gated Security *</label>
+                                    <select name="gatedSecurity" class="custom-select mb-4">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                        <option value="5">Option 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label for="inlineFormInputGroupUsername">Secondary Number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="bg-white input-group-text"><i class="fa fa-phone-alt"></i></div>
+                                        </div>
+                                        <input name="Secondnumber" type="text" class="form-control"
+                                            id="inlineFormInputGroupUsername" placeholder="Secondary Mobile">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <!--Blue select-->
+                                    <label class="mdb-main-label">Who Will Me Show the House ? *</label>
+                                    <select class="custom-select mb-4">
+                                        <option name="houseowner" selected>Choose...</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="pt-2 " />
+                            <p class="h6 py-2 dark-grey-text">Select the Available Amenities
+                            </p>
+                            <div class="row">
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem1" class="form-check-input" id="amenty1
+                            ">
+                                        <label class="form-check-label gray-dark" for="amenty1
+                            "><i class="fas fa-arrows-alt-v gray-dark px-2"></i>Lift</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem2" class="form-check-input" id="amenty2
+                            ">
+                                        <label class="form-check-label" for="amenty2
+                            "><i class="fa fa-wifi gray-dark px-2"></i>Internet services</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem3" class="form-check-input" id="amenty3
+                            ">
+                                        <label class="form-check-label" for="amenty3
+                            "><i class="fa fa-snowflake gray-dark px-2"></i>Air conditioner</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem4" class="form-check-input" id="amenty4
+                        ">
+                                        <label class="form-check-label" for="amenty4
+                        "><i class="fas fa-glass-cheers gray-dark px-2"></i>Club House</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem5" class="form-check-input" id="amenty5
+                            ">
+                                        <label class="form-check-label" for="amenty5
+                            "><i class="fab fa-intercom gray-dark px-2"></i>Intercom</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem6" class="form-check-input" id="amenty6
+                            ">
+                                        <label class="form-check-label" for="amenty6
+                            "><i class="fa fa-swimming-pool gray-dark px-2"></i>Swiming Pool</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem7" class="form-check-input" id="amenty8
+                            ">
+                                        <label class="form-check-label" for="amenty8
+                            "><i class="fab fa-slideshare gray-dark px-2"></i>Childrens playing area</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem9" class="form-check-input" id="amenty9
+                        ">
+                                        <label class="form-check-label" for="amenty9
+                        "><i class="fas fa-fire-extinguisher gray-dark px-2"></i>Fire Safety</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem10" class="form-check-input" id="amenty10
+                        ">
+                                        <label class="form-check-label" for="amenty10
+                        "><i class="fas fa-check-circle gray-dark px-2"></i>Servant Room</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem11" class="form-check-input" id="amenty11
+                            ">
+                                        <label class="form-check-label" for="amenty11
+                            "><i class="fa fa-store gray-dark px-2"></i>Shopping Center</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem12" class="form-check-input" id="amenty12
+                            ">
+                                        <label class="form-check-label" for="amenty12
+                            "><i class="fa fa-burn gray-dark px-2"></i>Gas Pipeline</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem13" class="form-check-input" id="amenty13
+                            ">
+                                        <label class="form-check-label" for="amenty13
+                            "><i class="fa fa-tree gray-dark px-2"></i>Park</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem14" class="form-check-input" id="amenty14
+                            ">
+                                        <label class="form-check-label" for="amenty14
+                            "><i class="fa fa-check-circle gray-dark px-2"></i>Rain Water Harvesting</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem15" class="form-check-input" id="amenty15
+                            ">
+                                        <label class="form-check-label" for="amenty15
+                            "><i class="fa fa-trash-alt gray-dark px-2"></i>Sewage Treament Plant</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem16" class="form-check-input" id="amenty16
+                            ">
+                                        <label class="form-check-label" for="amenty16
+                            "><i class="fa fa-person-booth gray-dark px-2"></i>House keeping</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem17" class="form-check-input" id="amenty17
+                        ">
+                                        <label class="form-check-label" for="amenty17
+                        "><i class="fa fa-car-battery gray-dark px-2"></i>Power Backup</label>
+                                    </div>
+                                </div>
+                                <div class="pt-1 col-lg-4">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="amentyitem18" class="form-check-input" id="amenty18
+                        ">
+                                        <label class="form-check-label" for="amenty18
+                        "><i class="fa fa-parking gray-dark px-2"></i>Visitor Parking</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Amenties details Section-->
+
+
+
+
+                     <!--Schedule details Section-->
+                    <div class="tab">
+                        <div class="py-3 px-5 font-weight-bold text-default">
+                            <p class="form-head-text">Make house visits hassle-free by providing us your availability
+                            </p>
+                        </div>
+                        <hr class="w-100 py-2 p-0 m-0">
+
+                        <div class="row p-4">
+                            <div class="col-lg-6">
+                                <!--Blue select-->
+                                <label class="mdb-main-label">I want to get my house painted*</label>
+                                <select name="wanttopaint" class="custom-select mb-4">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <!--Blue select-->
+                                <label class="mdb-main-label">I want to get my house clean*</label>
+                                <select class="custom-select mb-4">
+                                    <option name="wanttoclean" selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <!--Blue select-->
+                                <label class="mdb-main-label">Availablility*</label>
+                                <select name="availability" class="custom-select mb-4">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-lg-6">
+                                <label for="inlineFormInputStarttime">Start Time *</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
+                                    </div>
+                                    <input name="starttime" type="number" class="form-control"
+                                        id="inlineFormInputStarttime" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <label for="inlineFormInputGroupendtime">End Time *</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
+                                    </div>
+                                    <input type="number" name="endtime" class="form-control"
+                                        id="inlineFormInputGroupendtime" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Schedule details Section-->
+
+
+                <div class="col-lg-12 py-3">
+                    <hr class="py-1">
+                    <center>
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button> <button type="button"
+                            id="nextBtn" onclick="nextPrev(1)">Save & Continue</button>
+
+                    </center>
+                </div>
+
+
+            
+        </form>

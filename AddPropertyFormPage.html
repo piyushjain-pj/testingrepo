@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Complete your Post - Become Partner</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="addproperty.css">
+    <link rel="stylesheet" href="steppers.css">
+    <link rel="stylesheet" href="footer.css">
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="counter.jquery.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+<!--Navbar -->
+<header class="sticky-top ">
+        <nav class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold">
+            <a class=" navbar-brand" href="#">
+                <img src="https://sheltown.in/static/sheltownapp/img/logo.png" width="150" height="50" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                    <button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times"
+                            aria-hidden="true" style="font-size : 28px;"></i></button>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<!--/.Navbar -->
+<!-- End header-->
+<main role="main">
+    <!--------------------------------------
+List Property Process Sections
+---------------------------------------->
+<div id="always-top-for-back" class="app-inner">
+     <!--inner Nav bar Section-->
+       <div class="container-custom container py-1" >
+        <div class="row hide-in-mobile">
+                <div class="col-sm-12 pb-1 mb-1 mt-1">
+                    <div class="row white py-1" style="flex-direction: row;">
+                        <div class="col-lg-4 col-sm-12">
+                            <div><img class="hoverable" style="padding-top: 14px;" alt="img"
+                                    src="https://assets.nobroker.in/nb-new/public/Pyp-Form/resale_logo.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 " style="padding-top: 30px">
+                            <div class="progress progress-bar-Mobile">
+                                <div class="progress-bar progress-bar-success"role="progressbar" id="progressbarcount" style="width: 0%;" aria-valuenow="0"          aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 px-4 pl-3"style="padding-top: 23px"><span class="flex-direction : row " id="progressspan"><p id="progresstext"></p>% Done</span>
+                        </div>
+                        <div class="col-lg-1 px-0 col-sm-12">
+                            <button class="btn-lg-preview px-4 btn btn-sm btn-success">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="row mb-2"  >
+    <!--Side bar -->
+<div class="col-lg-2 hide-in-mobile bg-white px-0 mx-0">
+        <div class="sidebar-sticky py-2">
+            <ul class="nav flex-column">
+                <div class="list-group list-group-flush">
+                    <a class="py-3 step-side list-group-item list-group-item-action  waves-effect" onclick="getTab(0)">
+                    <i class="fa fa-home mr-3"></i>Property Details</a>
+                    
+                    <a  class="py-3 step-side list-group-item list-group-item-action waves-effect" onclick="getTab(1)">
+                    <i class="fa fa-map-marker-alt mr-3"></i>&nbsp;Locality Details</a>
+
+                    <a class="py-3 step-side list-group-item list-group-item-action waves-effect" onclick="getTab(2)">
+                  <i class="fa fa-city mr-3"></i>Rental Details</a>
+                    <a  class="py-3 step-side list-group-item list-group-item-action waves-effect" onclick="getTab(3)">
+                        <i class="fa fa-images mr-3"></i>Gallery</a>
+
+                    <a  class="py-3 step-side list-group-item list-group-item-action waves-effect" onclick="getTab(4)">
+                        <i class="fa fa-tv mr-3"></i>Amenities</a>
+                    <a  class="py-3 step-side list-group-item list-group-item-action waves-effect" onclick="getTab(5)">
+                        <i class="fa fa-calendar-alt mr-3"></i>&nbsp;Schedule</a>
+                </div>
+        </div>
+</div>
+<!--end--Side bar -->
+
+<!--Form Middle Section-->
+
+<div id="always-top-for-next" class="col-lg-8 mx-lg-1 px-0 white">
+        <form id="addnewproperty" action="action.html">
+            <!--Property details Section-->
+            <div id="tab1" class="tab">
+                <!-- Heading -->
+                <div class="py-3 px-4 font-weight-bold text-default">
+                    <p class="form-head-text">Property details </p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="row mx-2">
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">Apartment Type*</label>
+                        <select name="apartmenttype" class="custom-select  mb-3">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label class="mr-sm-2" for="inlineFormCustomSelect1">BHK Type*</label>
+                        <select name="bhktype" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect1">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label class="mdb-main-label">Property Age*</label>
+                        <select name="propertyage" class="custom-select  mb-3">
+                            <option selected>Choose...</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label for="inlineFormInputGroupUsername">Property Size*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-ruler-combined"></i>
+                                </div>
+                            </div>
+                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Property in Sq.ft">
+                        </div>
+                        <!--/Blue select-->
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 ">
+                        <div class="">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Floor*</label>
+                            <select name="floor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Total Floor*</label>
+                            <select name="totalfloor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Facing</label>
+                            <select name="propertyfacing" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Property details Section-->
+            
+            
+            
+            
+            <!--Location details Section-->
+            <div id="tab1" class="tab">
+                <!-- Heading -->
+                <div class="py-3 px-5 font-weight-bold text-default">
+                    <p class="form-head-text">Locality Details</p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="row p-3 mx-2">
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">City *</label>
+                        <select name="propertycity" class="custom-select mb-2">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <label for="inlineFormInputGroupUsername">Street Area*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text">₹</div>
+                            </div>
+                            <input name="streetarea" type="text" class="form-control " id="inlineFormInputGroupUsername"
+                                placeholder="Strea/Area">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-2
+                    ">
+                        <label for="inlineFormInputGroupUsername">Locality*</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-map-marker-alt"></i></div>
+                            </div>
+                            <input name="locality" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Property in Sq.ft">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End location details Section-->
+            
+            
+            
+            
+            
+            <!--Rental details Section-->
+            <div id="tab1" class="tab">
+                <div class="py-3 px-lg-4 px-4 font-weight-bold text-default">
+                    <p class="form-head-text">Provide Rental Details About your Property.</p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="row mx-2 ">
+                    <div class="col-lg-6">
+                        <label>property available for*</label><br>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name=" propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked1"
+                                name="defaultExample2">
+                            <label class="custom-control-label" for="defaultChecked1">Rental Only</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name="propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked2"
+                                name="defaultExample2">
+                            <label class="custom-control-label" for="defaultChecked2">Lease Only</label>
+                        </div>
+                        <br>
+                        <br>
+                        <label for="inlineFormInputGrouprentpermonth">Expected Rent*</label>
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text">₹</div>
+                            </div>
+                            <input name="expectedrent" type="text" class="form-control" id="inlineFormInputGrouprentpermonth"
+                                placeholder="Enter rent per month">
+                        </div>
+                        <!-- Default checked -->
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input name="negotiation" type="checkbox" class="custom-control-input" id="defaultChecked3">
+                            <label class="custom-control-label" for="defaultChecked3">Negotiation</label>
+                        </div>
+            
+                        <label for="inlineFormInputGroupMaintenance" class="mdb-main-label">Maintenance
+                            *</label>
+                        <select name="maintenance" id="inlineFormInputGroupMaintenance" class="custom-select mb-2">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+            
+                        <label for="inlineFormInputavailable">Available From*</label>
+                        <div class="input-group mb-3">
+                            <input name="availablefor" type="date" name="propertymaintainance" class="form-control"
+                                id="inlineFormInputavailable" placeholder="">
+                        </div>
+            
+            
+                    </div>
+            
+            
+                    <div class="col-lg-6">
+                        <label for="inlineFormInputGroupUsername">Locality*</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                            <input name="locality" type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="area/landmark">
+                        </div>
+            
+            
+                        <label for="inlineFormInputFursuing" class="mdb-main-label">Furnishing *</label>
+                        <select name="furnshing" id="inlineFormInputFursuing" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+            
+                        <label for="inlineFormInputTenants" class="mdb-main-label">Preferred Tenants *</label>
+                        <select name="tenants" id="inlineFormInputTenants" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+            
+                        <label for="inlineFormInputParking" class="mdb-main-label">Parking *</label>
+                        <select name="parking" id="inlineFormInputParking" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                    </div>
+            
+                    <div class="col-lg-12 mb-0">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea2">Propetry Description</label>
+                            <textarea name="description" class="form-control rounded-0" id="exampleFormControlTextarea2"
+                                rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Rental details Section-->
+
+        
+            <!--Gallery details Section-->
+            <div id="tab1" class="tab ">
+                <div class="py-3 px-4 font-weight-bold text-default">
+                    <p class="form-head-text">Uploads Your Property Picture </p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="mx-3">
+                <div class="mx-lg-5 bg-info py-5 mb-lg-4 mt-lg-4">
+                    <div class="file-upload-wrapper">
+                        <div class="input-group mb-lg-4 px-lg-5">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text  mb-1 pb-0 pt-1 px-1">Upload</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+                                <label class="custom-file-label" for="fileInput">choose photo</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="py-2">
+                <center><span class="py-2 mb-2 text-info h4-responsive font-weight-bold">We can Upload photos on Your
+                        behalf </span>
+                </center>
+                <div class="row p-3">
+                    <div class="col-lg-6 col-xs-3 mb-2">
+                        <div class="border p-3">
+                            <center>
+                                <span class="fab fa-whatsapp fa-2x light-blue-text">
+                                </span><span class="h5">Send Us on Whatsapp</span><br>
+                                <hr class="p-1">
+                                <span class="text-center text-info font-weight-bold mx-auto">+91-0000-000-000</span>
+                            </center>
+            
+                        </div>
+            
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="border p-3">
+                            <center>
+                                <span class="far fa-envelope fa-2x light-blue-text">
+                                </span><span class="h5">Send Us on Mail</span><br>
+                                <hr class="p-1">
+                                <span class="text-center text-info font-weight-bold mx-auto">examplele@gmail.com</span>
+                            </center>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+        </div>
+            <!--End Gallery Details Sections-->            
+       
+            
+        
+        
+        
+        
+        
+            <!--Amenties details Section-->
+            <div id="tab1" class="tab">
+                <!-- Heading -->
+                <div class="py-3 px-4 font-weight-bold text-default">
+                    <p class="form-head-text">Provide additional details about property get Maximum Visible</p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+                <div class="py-3 px-lg-5 px-3">
+                    <div class="row">
+                        <div class="col-lg-4 ">
+                            <label for="inlineFormInputNoBathroom">Bathrooms *</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="bg-white input-group-text"><i class="fa fa-bath"></i></div>
+                                </div>
+                                <input name="noofbath" type="number" class="form-control" id="inlineFormInputNoBathroom"
+                                    placeholder="0">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <label for="inlineFormInputGroupNoBalcony" class="mt-lg-0 mt-4">Balcony *</label>
+                            <div class="input-group mb-4 ">
+                                <div class="input-group-prepend">
+                                    <div class="bg-white input-group-text"><i class="fa fa-person-booth"></i>
+                                    </div>
+                                </div>
+                                <input type="number" name="noofbalcony" class="form-control" id="inlineFormInputGroupNoBalcony"
+                                    placeholder="0">
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <!--Blue select-->
+                            <label class="mdb-main-label">Water Supply *</label>
+                            <select class="custom-select mb-4">
+                                <option name="watersupply" selected>Choose...</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <!--Blue select-->
+                            <label class="mdb-main-label">Gym *</label>
+                            <select class="custom-select mb-4">
+                                <option name="gym" selected>Choose...</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <!--Blue select-->
+                            <label class="mdb-main-label">Non-Veg Allowed *</label>
+                            <select name="non-veg" class="custom-select mb-4">
+                                <option selected>Choose...</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <!--Blue select-->
+                            <label class="mdb-main-label">Gated Security *</label>
+                            <select name="gatedSecurity" class="custom-select mb-4">
+                                <option selected>Choose...</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="inlineFormInputGroupUsername">Secondary Number</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="bg-white input-group-text"><i class="fa fa-phone-alt"></i></div>
+                                </div>
+                                <input name="Secondnumber" type="text" class="form-control " id="inlineFormInputGroupUsername"
+                                    placeholder="Secondary Mobile">
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4">
+                            <!--Blue select-->
+                            <label class="mdb-main-label mt-3">Who Will Me Show the House ? *</label>
+                            <select class="custom-select  mb-lg-4 mb-2">
+                                <option name="houseowner" selected>Choose...</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="pt-lg-2 "/>
+                    <p class="h6 py-2 dark-grey-text">Select the Available Amenities
+                    </p>
+                    <div class="row px-lg-3 px-1">
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem1" class="form-check-input" id="amenty1
+                                    ">
+                                <label class="form-check-label gray-dark" for="amenty1
+                                    "><i class="fas fa-arrows-alt-v gray-dark px-2"></i>Lift</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem2" class="form-check-input" id="amenty2
+                                    ">
+                                <label class="form-check-label" for="amenty2
+                                    "><i class="fa fa-wifi gray-dark px-2"></i>Internet services</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem3" class="form-check-input" id="amenty3
+                                    ">
+                                <label class="form-check-label" for="amenty3
+                                    "><i class="fa fa-snowflake gray-dark px-2"></i>Air conditioner</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem4" class="form-check-input" id="amenty4
+                                ">
+                                <label class="form-check-label" for="amenty4
+                                "><i class="fas fa-glass-cheers gray-dark px-2"></i>Club House</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem5" class="form-check-input" id="amenty5
+                                    ">
+                                <label class="form-check-label" for="amenty5
+                                    "><i class="fab fa-intercom gray-dark px-2"></i>Intercom</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem6" class="form-check-input" id="amenty6
+                                    ">
+                                <label class="form-check-label" for="amenty6
+                                    "><i class="fa fa-swimming-pool gray-dark px-2"></i>Swiming Pool</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem7" class="form-check-input" id="amenty8
+                                    ">
+                                <label class="form-check-label" for="amenty8
+                                    "><i class="fab fa-slideshare gray-dark px-2"></i>Childrens playing area</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem9" class="form-check-input" id="amenty9
+                                ">
+                                <label class="form-check-label" for="amenty9
+                                "><i class="fas fa-fire-extinguisher gray-dark px-2"></i>Fire Safety</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem10" class="form-check-input" id="amenty10
+                                ">
+                                <label class="form-check-label" for="amenty10
+                                "><i class="fas fa-check-circle gray-dark px-2"></i>Servant Room</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem11" class="form-check-input" id="amenty11
+                                    ">
+                                <label class="form-check-label" for="amenty11
+                                    "><i class="fa fa-store gray-dark px-2"></i>Shopping Center</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem12" class="form-check-input" id="amenty12
+                                    ">
+                                <label class="form-check-label" for="amenty12
+                                    "><i class="fa fa-burn gray-dark px-2"></i>Gas Pipeline</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem13" class="form-check-input" id="amenty13
+                                    ">
+                                <label class="form-check-label" for="amenty13
+                                    "><i class="fa fa-tree gray-dark px-2"></i>Park</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem14" class="form-check-input" id="amenty14
+                                    ">
+                                <label class="form-check-label" for="amenty14
+                                    "><i class="fa fa-check-circle gray-dark px-2"></i>Rain Water Harvesting</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem15" class="form-check-input" id="amenty15
+                                    ">
+                                <label class="form-check-label" for="amenty15
+                                    "><i class="fa fa-trash-alt gray-dark px-2"></i>Sewage Treament Plant</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem16" class="form-check-input" id="amenty16
+                                    ">
+                                <label class="form-check-label" for="amenty16
+                                    "><i class="fa fa-person-booth gray-dark px-2"></i>House keeping</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem17" class="form-check-input" id="amenty17
+                                ">
+                                <label class="form-check-label" for="amenty17
+                                "><i class="fa fa-car-battery gray-dark px-2"></i>Power Backup</label>
+                            </div>
+                        </div>
+                        <div class="pt-1 col-lg-4 col-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="amentyitem18" class="form-check-input" id="amenty18
+                                ">
+                                <label class="form-check-label" for="amenty18
+                                "><i class="fa fa-parking gray-dark px-2"></i>Visitor Parking</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Amenties details Section-->
+        
+        
+        
+        
+            <!--Schedule details Section-->
+            <div id="tab1" class="tab">
+                <div class="py-3 px-lg-5 px-4 font-weight-bold text-default">
+                    <p class="form-head-text">Make house visits hassle-free by providing us your availability
+                    </p>
+                </div>
+                <hr class="w-100 py-2 p-0 m-0">
+        
+                <div class="row mx-2">
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">I want to get my house painted*</label>
+                        <select name="wanttopaint" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">I want to get my house clean*</label>
+                        <select class="custom-select mb-4">
+                            <option name="wanttoclean" selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <!--Blue select-->
+                        <label class="mdb-main-label">Availablility*</label>
+                        <select name="availability" class="custom-select mb-4">
+                            <option selected>Choose...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+        
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label for="inlineFormInputStarttime">Start Time *</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
+                            </div>
+                            <input name="starttime" type="number" class="form-control" id="inlineFormInputStarttime"
+                                placeholder="0">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <label for="inlineFormInputGroupendtime">End Time *</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
+                            </div>
+                            <input type="number" name="endtime" class="form-control" id="inlineFormInputGroupendtime"
+                                placeholder="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Schedule details Section-->
+        
+        
+            <div class="col-lg-12 py-3">
+                <hr class="py-1">
+                <center>
+                    <button type="button" href="#tab1" id="prevBtn" onclick="nextPrev(-1)">
+                        <a href="#always-top-for-back"">  Back  </a></button>
+                     <button type="button" href="#tab-1" id="nextBtn" onclick="nextPrev(1)">
+                        <a href="#always-top-for-next" > Save & Continue  </a></button>
+
+                     
+        
+                </center>
+            </div>
+        
+        
+        
+        </form>
+</div>
+<!--End Form Middle Section-->
+
+
+<div class="col-lg-2-custom hide-in-mobile col-lg-2 bg-white px-1">
+    <div class="px-0 pb-5">
+        <!-- Heading -->
+        <div class="hh mb-4 wow fadeIn">
+            <!-- Card content -->
+            <div class="card-body underinfo p-2 m-2">
+
+                <!-- Title -->
+                <h4 class=" card-title h6 font-weight-bold h6"><a class="text-default">Get Tenants Faster</a></h4>
+                <!-- Text -->
+                <p class="card-text" style="font-size: 12px;">Subscribe to our owner plans and find Tenants quickly and
+                    with ease</p>
+                <center>
+                    <div class="">
+                        <!--Section: Content-->
+                        <section class="text-center dark-grey-text">
+                            <!--Grid row-->
+                            <div class="row justify-content-center">
+
+                                <!--First column-->
+                                <div class="col-lg-12 p-2 col-md-12">
+                                    <i class="fas fa-phone-slash fa-2x "></i>
+
+                                    <p class="font-weight-bold ">No Call From Brokers</p>
+
+                                </div>
+                                <!--/First column-->
+
+                                <!--Second column-->
+                                <div class="col-lg-12 p-2 col-md-6">
+                                    <i class="fas fa-user-check fa-2x"></i>
+
+                                    <p class="font-weight-bold ">Verified Tenants</p>
+
+                                </div>
+                                <!--/Second column-->
+
+                                <!--Third column-->
+                                <div class="col-lg-12 p-2 col-md-6">
+                                    <i class="fas fa-piggy-bank fa-2x "></i>
+
+                                    <p class="font-weight-bold">Save Brokerage</p>
+
+                                </div>
+                                <!--/Third column-->
+
+                                <!--Fourth column-->
+                                <div class="col-lg-12 p-2 col-md-6 ">
+                                    <i class="fas fa-user-shield fa-2x "></i>
+
+                                    <p class="font-weight-bold ">Ultimate Privacy</p>
+
+                                </div>
+                                <!--/Fourth column-->
+
+                            </div>
+                            <!--/Grid row-->
+
+
+                        </section>
+                        <!--Section: Content-->
+                    </div>
+                    <!-- Button -->
+                    <a href="#" class="btn theme-color btn-mp p-2 py-1"
+                        style="text-transform: capitalize; color: white;">Show interest</a>
+
+                </center>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+<!--end container Section-->
+</div>
+<!--end inner Nav bar Section-->
+</div>
+</main>
+
+
+<script type="text/javascript" src="stepper.js"></script>
+<!---Footer section will here-->
+<!--Footer one -->
+
+<footer class="site-footer py-5 mt-1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 about-text">
+                    <h5><b>About</b></h5>
+                    <p class="text-justify">We are a strong team focused on building a network where we could serve you
+                        regarding
+                        all your needs of having your own shelter.
+                        We are bound to provide you the best possible care and support which helps you meet your demands.
+                        Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely
+                        interwoven into the fibre of our efforts.
+                        We help you to find your match, book rental homes of choice across Indian cities.
+                    </p>
+                    <p>Accept our warm SheltOwn hug.</p>
+                </div>
+    
+                <div class="col-xs-6 col-md-3 category-text">
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/AboutUs/">About Us</a></li>
+                        <li><a href="/Policy/">Our Policies</a></li>
+                        <li><a href="/Policy/">Work With Us</a></li>
+                        <li><a href="/Policy/">Find a Home Now</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-xs-6 col-md-3 quick-text">
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/BecomePartner/">List Your Property</a></li>
+                        <li><a href="/Testimonial/">Testimonials</a></li>
+                        <li><a href="/Blog/">Blogs</a></li>
+                        <li><a href="https://www.xml-sitemaps.com/download/sheltown.in-8ee3322da/sitemap.xml?view=1">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+</footer>
+<section class="footer-two">
+        <div class="container">
+            <a style="color: #2ecab5c9; cursor: pointer;" onclick=hiddenDivitem()>More info</a>
+            <br>
+            <div class="mid" id="HiddenDiv" style="display: none;">
+                <div class="row" id="more">
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Room for rent in Delhi</a></li>
+                            <li><a href="#">Room for boys in Delhi</a></li>
+                            <li><a href="#">Room for girls in Delhi</a></li>
+                            <li><a href="#">Room for family in Delhi</a></li>
+                            <li><a href="#">Room for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">PG for rent in Delhi</a></li>
+                            <li><a href="#">PG for boys in Delhi</a></li>
+                            <li><a href="#">PG for girls in Delhi</a></li>
+                            <li><a href="#">PG for family in Delhi</a></li>
+                            <li><a href="#">PG for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Hostel for rent in Delhi</a></li>
+                            <li><a href="#">Hostel for boys in Delhi</a></li>
+                            <li><a href="#">Hostel for girls in Delhi</a></li>
+                            <li><a href="#">Hostel for family in Delhi</a></li>
+                            <li><a href="#">Hostel for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Flats for rent in Delhi</a></li>
+                            <li><a href="#">Flats for boys in Delhi</a></li>
+                            <li><a href="#">Flats for girls in Delhi</a></li>
+                            <li><a href="#">Flats for family in Delhi</a></li>
+                            <li><a href="#">Flats for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Apartments for rent in Delhi</a></li>
+                            <li><a href="#">Apartments for boys in Delhi</a></li>
+                            <li><a href="#">Apartments for girls in Delhi</a></li>
+                            <li><a href="#">Apartments for family in Delhi</a></li>
+                            <li><a href="#">Apartments for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">House for rent in Delhi</a></li>
+                            <li><a href="#">House for boys in Delhi</a></li>
+                            <li><a href="#">House for girls in Delhi</a></li>
+                            <li><a href="#">House for family in Delhi</a></li>
+                            <li><a href="#">House for couple in Delhi</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Room for rent in Kota</a></li>
+                            <li><a href="#">Room for boys in Kota</a></li>
+                            <li><a href="#">Room for girls in Kota</a></li>
+                            <li><a href="#">Room for family in Kota</a></li>
+                            <li><a href="#">Room for couple in Kota</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">PG for rent in Kota</a></li>
+                            <li><a href="#">PG for boys in Kota</a></li>
+                            <li><a href="#">PG for girls in Kota</a></li>
+                            <li><a href="#">PG for family in Kota</a></li>
+                            <li><a href="#">PG for couple in Kota</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Hostel for rent in Kota</a></li>
+                            <li><a href="#">Hostel for boys in Kota</a></li>
+                            <li><a href="#">Hostel for girls in Kota</a></li>
+                            <li><a href="#">Hostel for family in Kota</a></li>
+                            <li><a href="#">Hostel for couple in Kota</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Flats for rent in Kota</a></li>
+                            <li><a href="#">Flats for boys in Kota</a></li>
+                            <li><a href="#">Flats for girls in Kota</a></li>
+                            <li><a href="#">Flats for family in Kota</a></li>
+                            <li><a href="#">Flats for couple in Kota</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Apartments for rent in Kota</a></li>
+                            <li><a href="#">Apartments for boys in Kota</a></li>
+                            <li><a href="#">Apartments for girls in Kota</a></li>
+                            <li><a href="#">Apartments for family in Kota</a></li>
+                            <li><a href="#">Apartments for couple in Kota</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">House for rent in Kota</a></li>
+                            <li><a href="#">House for boys in Kota</a></li>
+                            <li><a href="#">House for girls in Kota</a></li>
+                            <li><a href="#">House for family in Kota</a></li>
+                            <li><a href="#">House for couple in Kota</a></li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Room for rent in Varanasi</a></li>
+                            <li><a href="#">Room for boys in Varanasi</a></li>
+                            <li><a href="#">Room for girls in Varanasi</a></li>
+                            <li><a href="#">Room for family in Varanasi</a></li>
+                            <li><a href="#">Room for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">PG for rent in Varanasi</a></li>
+                            <li><a href="#">PG for boys in Varanasi</a></li>
+                            <li><a href="#">PG for girls in Varanasi</a></li>
+                            <li><a href="#">PG for family in Varanasi</a></li>
+                            <li><a href="#">PG for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Hostel for rent in Varanasi</a></li>
+                            <li><a href="#">Hostel for boys in Varanasi</a></li>
+                            <li><a href="#">Hostel for girls in Varanasi</a></li>
+                            <li><a href="#">Hostel for family in Varanasi</a></li>
+                            <li><a href="#">Hostel for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Flats for rent in Varanasi</a></li>
+                            <li><a href="#">Flats for boys in Varanasi</a></li>
+                            <li><a href="#">Flats for girls in Varanasi</a></li>
+                            <li><a href="#">Flats for family in Varanasi</a></li>
+                            <li><a href="#">Flats for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Apartments for rent in Varanasi</a></li>
+                            <li><a href="#">Apartments for boys in Varanasi</a></li>
+                            <li><a href="#">Apartments for girls in Varanasi</a></li>
+                            <li><a href="#">Apartments for family in Varanasi</a></li>
+                            <li><a href="#">Apartments for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">House for rent in Varanasi</a></li>
+                            <li><a href="#">House for boys in Varanasi</a></li>
+                            <li><a href="#">House for girls in Varanasi</a></li>
+                            <li><a href="#">House for family in Varanasi</a></li>
+                            <li><a href="#">House for couple in Varanasi</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Room for rent in Patna</a></li>
+                            <li><a href="#">Room for boys in Patna</a></li>
+                            <li><a href="#">Room for girls in Patna</a></li>
+                            <li><a href="#">Room for family in Patna</a></li>
+                            <li><a href="#">Room for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">PG for rent in Patna</a></li>
+                            <li><a href="#">PG for boys in Patna</a></li>
+                            <li><a href="#">PG for girls in Patna</a></li>
+                            <li><a href="#">PG for family in Patna</a></li>
+                            <li><a href="#">PG for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Hostel for rent in Patna</a></li>
+                            <li><a href="#">Hostel for boys in Patna</a></li>
+                            <li><a href="#">Hostel for girls in Patna</a></li>
+                            <li><a href="#">Hostel for family in Patna</a></li>
+                            <li><a href="#">Hostel for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Flats for rent in Patna</a></li>
+                            <li><a href="#">Flats for boys in Patna</a></li>
+                            <li><a href="#">Flats for girls in Patna</a></li>
+                            <li><a href="#">Flats for family in Patna</a></li>
+                            <li><a href="#">Flats for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Apartments for rent in Patna</a></li>
+                            <li><a href="#">Apartments for boys in Patna</a></li>
+                            <li><a href="#">Apartments for girls in Patna</a></li>
+                            <li><a href="#">Apartments for family in Patna</a></li>
+                            <li><a href="#">Apartments for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <ul class="footer-two-links">
+                            <li><a href="#">House for rent in Patna</a></li>
+                            <li><a href="#">House for boys in Patna</a></li>
+                            <li><a href="#">House for girls in Patna</a></li>
+                            <li><a href="#">House for family in Patna</a></li>
+                            <li><a href="#">House for couple in Patna</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Electrician in Delhi</a></li>
+                            <li><a href="#">Plumber in Delhi</a></li>
+                            <li><a href="#">Repair &amp; Maintenance in Delhi</a></li>
+                            <li><a href="#">Home Tuition in Delhi</a></li>
+                            <li><a href="#">Newspaper-Wala in Delhi</a></li>
+                            <li><a href="#">Salon in Delhi</a></li>
+                            <li><a href="#">Hair-Cut in Delhi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Electrician in Varanasi</a></li>
+                            <li><a href="#">Plumber in Varanasi</a></li>
+                            <li><a href="#">Repair &amp; Maintenance in Varanasi</a></li>
+                            <li><a href="#">Home Tuition in Varanasi</a></li>
+                            <li><a href="#">Newspaper-Wala in Varanasi</a></li>
+                            <li><a href="#">Salon in Varanasi</a></li>
+                            <li><a href="#">Hair-Cut in Varanasi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Electrician in Patna</a></li>
+                            <li><a href="#">Plumber in Patna</a></li>
+                            <li><a href="#">Repair &amp; Maintenance in Patna</a></li>
+                            <li><a href="#">Home Tuition in Patna</a></li>
+                            <li><a href="#">Newspaper-Wala in Patna</a></li>
+                            <li><a href="#">Salon in Patna</a></li>
+                            <li><a href="#">Hair-Cut in Patna</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="footer-two-links">
+                            <li><a href="#">Electrician in Kota</a></li>
+                            <li><a href="#">Plumber in Kota</a></li>
+                            <li><a href="#">Repair &amp; Maintenance in Kota</a></li>
+                            <li><a href="#">Home Tuition in Kota</a></li>
+                            <li><a href="#">Newspaper-Wala in Kota</a></li>
+                            <li><a href="#">Salon in Kota</a></li>
+                            <li><a href="#">Hair-Cut in Kota</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <br>
+                    <a href="mailto:info@sheltown.com" style="color:#2ECAB6;">info@sheltown.com</a>
+                    <br>
+                    <p class="copyright-text">Copyright © 2020 All Rights Reserved
+    
+                    </p>
+                </div>
+    
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <br>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/sheltown.india" class="fab fa-facebook"
+                                aria-hidden="true"></a>
+                        </li>
+                        <li><a class="twitter" href="https://twitter.com/OwnShelt?s=20"><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a class="dribbble" href="https://instagram.com/sheltown.india">
+                                <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/company/sheltown"><i class="fab fa-linkedin"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+</body>   
+</html>
