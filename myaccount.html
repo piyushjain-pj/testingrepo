@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - SheltOwn</title>
+    <!-- SheltOwn icon -->
+    <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="addproperty.css">
+    <link rel="stylesheet" href="myaccount.css">
+
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="counter.jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
+        <style>
+        </style>
+</head>
+<body>
+<!--Header -->
+<header class="sticky-top scrolling-navbar">
+    <!--Navbar -->
+    <nav style="box-shadow: none" class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold ">
+            <a class="navbar-brand" href="#">
+            <img src="https://sheltown.in/static/sheltownapp/img/logo.png" width="150" height="50" alt="logo"></a>
+            <button class="mobile-nav-toggle hide-d" type="button">
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar-collapse" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                <button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times" aria-hidden="true" style="font-size : 28px;"></i></button>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+                    </li>
+                --> <li class="nav-item dropdown">
+                        <a class="myaccount nav-link dropdown-toggle" style="height: 54px;" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="px-2">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0 " alt="avatar image" height="35">
+                        </span>
+                        <spna class="px-2" style="font-weight: 600; font-family: 'Courier New', Courier, monospace;">Alina Musk</spna>
+                        </a>
+                        <div class="z-depth-1 dropdown-menu myaccount-dropdown dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user-circle px-2"></i>Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-tachometer-alt px-2"></i>My Dashboard</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-list px-2 light-gray"></i>My Listings</a>
+                        <a class="dropdown-item" style="border-bottom: none!important;"href="#"><i class="fa fa-sign-out-alt px-2"></i>Sign Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+</header>   
+<!-- End header-->
+
+<!--My Account Outer div-->
+<div class="app-inner">
+    <!--Container for MyAccount-->
+    <div class="container">
+        <!--My Account side and Main Bar-->
+        <div class="row py-3">
+            <!--Side Navigation Bar-->
+            <div class="col-lg-3 border px-0" style="border-bottom: 1px solid #dbdbdb;">
+                <!-- ======= side menu ======= -->
+                <div class="side-menu">
+                    <div class="d-flex flex-column">
+                        <div class="profile hide-d">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg"  +alt="" class="img-fluid rounded-circle">
+                            <h1 class="text-light"><a href="myaccount.html">Alex Smith</a></h1>
+                        </div>
+                        <div class="profile px-2 hide-m">
+                            <p class="h6 pt-3 pb-2 px-2 text-grey">Manage Your Account</p>
+                            <hr class="my-0 py-2">
+                        </div>
+                        <nav class="nav-menu">
+                            <ul>
+                                <li class="active"><a id="basicTab" href="#basic"><i class="far fa-user-circle"></i> <span>Basic Profile</span></a></li>
+
+
+                                <li class=""><a href="#payments" id="paymentsTab" data-toggle="pill">
+                                <i class="fas fa-credit-card"></i><span>Your Payments</span></a>
+                                </li>
+
+                                <li class=" nav-header " data-toggle="collapse" id="listingMenuTab" data-target="#listingMenu">
+
+                                    <a data-toggle="pill"><i class="fas fa-th-list"></i><span class="c-yp">Your Properties</span></a>
+                            
+                                    <ul class="nav nav-list collapse" id="listingMenu" style="margin-left:15px;font-size:smaller;">
+                                        <li class=""><a href="#rentListings" id="rentListingsTab" data-toggle="pill">Rent (0)</a></li>
+                                        <li class=""><a href="#flatmatesListing" id="flatmatesListingTab" data-toggle="pill">flatmates (0)</a>
+                                        </li>
+                                        <li class=""><a href="#saleListings" id="saleListingsTab" data-toggle="pill">Sale (0)</a></li>
+                                        <li class=""><a href="#pgListings" id="pgListingsTab" data-toggle="pill">PG (0)</a></li>
+                                        <li class=""><a href="#crListings" id="crListingsTab" data-toggle="pill">Commercial Rent (0)</a></li>
+                                        <li class=""><a href="#csListings" id="csListingsTab" data-toggle="pill">Commercial Buy (0)</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="hide-d "><a class="" href="#signout"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
+                            </ul>
+                        </nav><!-- .nav-menu -->
+
+                    </div>
+                    </div>
+                <!-- End Header -->
+        </div>
+        <!--/.Side Navigation Bar-->
+        
+        <!--Middle Content Bar-->
+        <div class="col-lg-9 border px-0 white">
+
+            piyush
+            
+
+        </div>
+        <!--/.Middle Content Bar-->
+        </div>
+        <!--/.My Account side and Main Bar-->
+    </div>
+    <!--/.Container for MyAccount-->
+</div>
+<!--/.My Account Outer div-->
+
+
+<!--Footer Section-->
+<footer class="site-footer py-5 mt-1 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 about-text">
+                <h5><b>About</b></h5>
+                <p class="text-justify">We are a strong team focused on building a network where we could serve you
+                    regarding
+                    all your needs of having your own shelter.
+                    We are bound to provide you the best possible care and support which helps you meet your demands.
+                    Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely
+                    interwoven into the fibre of our efforts.
+                    We help you to find your match, book rental homes of choice across Indian cities.
+                </p>
+                <p>Accept our warm SheltOwn hug.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3 category-text">
+                <ul class="footer-links list-unstyled">
+                    <li><a href="/AboutUs/">About Us</a></li>
+                    <li><a href="/Policy/">Our Policies</a></li>
+                    <li><a href="/Policy/">Work With Us</a></li>
+                    <li><a href="/Policy/">Find a Home Now</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3 quick-text">
+                <ul class="footer-links list-unstyled">
+                    <li><a href="/BecomePartner/">List Your Property</a></li>
+                    <li><a href="/Testimonial/">Testimonials</a></li>
+                    <li><a href="/Blog/">Blogs</a></li>
+                    <li><a
+                            href="https://www.xml-sitemaps.com/download/sheltown.in-8ee3322da/sitemap.xml?view=1">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<section class="footer-two">
+    <div class="container">
+        <a style="color: #2ecab5c9; cursor: pointer;" onclick=hiddenDivitem()>More info</a>
+        <br>
+        <div class="mid" id="HiddenDiv" style="display: none;">
+            <div class="row" id="more">
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Room for rent in Delhi</a></li>
+                        <li><a href="#">Room for boys in Delhi</a></li>
+                        <li><a href="#">Room for girls in Delhi</a></li>
+                        <li><a href="#">Room for family in Delhi</a></li>
+                        <li><a href="#">Room for couple in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">PG for rent in Delhi</a></li>
+                        <li><a href="#">PG for boys in Delhi</a></li>
+                        <li><a href="#">PG for girls in Delhi</a></li>
+                        <li><a href="#">PG for family in Delhi</a></li>
+                        <li><a href="#">PG for couple in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Hostel for rent in Delhi</a></li>
+                        <li><a href="#">Hostel for boys in Delhi</a></li>
+                        <li><a href="#">Hostel for girls in Delhi</a></li>
+                        <li><a href="#">Hostel for family in Delhi</a></li>
+                        <li><a href="#">Hostel for couple in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Flats for rent in Delhi</a></li>
+                        <li><a href="#">Flats for boys in Delhi</a></li>
+                        <li><a href="#">Flats for girls in Delhi</a></li>
+                        <li><a href="#">Flats for family in Delhi</a></li>
+                        <li><a href="#">Flats for couple in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Apartments for rent in Delhi</a></li>
+                        <li><a href="#">Apartments for boys in Delhi</a></li>
+                        <li><a href="#">Apartments for girls in Delhi</a></li>
+                        <li><a href="#">Apartments for family in Delhi</a></li>
+                        <li><a href="#">Apartments for couple in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">House for rent in Delhi</a></li>
+                        <li><a href="#">House for boys in Delhi</a></li>
+                        <li><a href="#">House for girls in Delhi</a></li>
+                        <li><a href="#">House for family in Delhi</a></li>
+                        <li><a href="#">House for couple in Delhi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Room for rent in Kota</a></li>
+                        <li><a href="#">Room for boys in Kota</a></li>
+                        <li><a href="#">Room for girls in Kota</a></li>
+                        <li><a href="#">Room for family in Kota</a></li>
+                        <li><a href="#">Room for couple in Kota</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">PG for rent in Kota</a></li>
+                        <li><a href="#">PG for boys in Kota</a></li>
+                        <li><a href="#">PG for girls in Kota</a></li>
+                        <li><a href="#">PG for family in Kota</a></li>
+                        <li><a href="#">PG for couple in Kota</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Hostel for rent in Kota</a></li>
+                        <li><a href="#">Hostel for boys in Kota</a></li>
+                        <li><a href="#">Hostel for girls in Kota</a></li>
+                        <li><a href="#">Hostel for family in Kota</a></li>
+                        <li><a href="#">Hostel for couple in Kota</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Flats for rent in Kota</a></li>
+                        <li><a href="#">Flats for boys in Kota</a></li>
+                        <li><a href="#">Flats for girls in Kota</a></li>
+                        <li><a href="#">Flats for family in Kota</a></li>
+                        <li><a href="#">Flats for couple in Kota</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Apartments for rent in Kota</a></li>
+                        <li><a href="#">Apartments for boys in Kota</a></li>
+                        <li><a href="#">Apartments for girls in Kota</a></li>
+                        <li><a href="#">Apartments for family in Kota</a></li>
+                        <li><a href="#">Apartments for couple in Kota</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">House for rent in Kota</a></li>
+                        <li><a href="#">House for boys in Kota</a></li>
+                        <li><a href="#">House for girls in Kota</a></li>
+                        <li><a href="#">House for family in Kota</a></li>
+                        <li><a href="#">House for couple in Kota</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Room for rent in Varanasi</a></li>
+                        <li><a href="#">Room for boys in Varanasi</a></li>
+                        <li><a href="#">Room for girls in Varanasi</a></li>
+                        <li><a href="#">Room for family in Varanasi</a></li>
+                        <li><a href="#">Room for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">PG for rent in Varanasi</a></li>
+                        <li><a href="#">PG for boys in Varanasi</a></li>
+                        <li><a href="#">PG for girls in Varanasi</a></li>
+                        <li><a href="#">PG for family in Varanasi</a></li>
+                        <li><a href="#">PG for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Hostel for rent in Varanasi</a></li>
+                        <li><a href="#">Hostel for boys in Varanasi</a></li>
+                        <li><a href="#">Hostel for girls in Varanasi</a></li>
+                        <li><a href="#">Hostel for family in Varanasi</a></li>
+                        <li><a href="#">Hostel for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Flats for rent in Varanasi</a></li>
+                        <li><a href="#">Flats for boys in Varanasi</a></li>
+                        <li><a href="#">Flats for girls in Varanasi</a></li>
+                        <li><a href="#">Flats for family in Varanasi</a></li>
+                        <li><a href="#">Flats for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Apartments for rent in Varanasi</a></li>
+                        <li><a href="#">Apartments for boys in Varanasi</a></li>
+                        <li><a href="#">Apartments for girls in Varanasi</a></li>
+                        <li><a href="#">Apartments for family in Varanasi</a></li>
+                        <li><a href="#">Apartments for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">House for rent in Varanasi</a></li>
+                        <li><a href="#">House for boys in Varanasi</a></li>
+                        <li><a href="#">House for girls in Varanasi</a></li>
+                        <li><a href="#">House for family in Varanasi</a></li>
+                        <li><a href="#">House for couple in Varanasi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Room for rent in Patna</a></li>
+                        <li><a href="#">Room for boys in Patna</a></li>
+                        <li><a href="#">Room for girls in Patna</a></li>
+                        <li><a href="#">Room for family in Patna</a></li>
+                        <li><a href="#">Room for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">PG for rent in Patna</a></li>
+                        <li><a href="#">PG for boys in Patna</a></li>
+                        <li><a href="#">PG for girls in Patna</a></li>
+                        <li><a href="#">PG for family in Patna</a></li>
+                        <li><a href="#">PG for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Hostel for rent in Patna</a></li>
+                        <li><a href="#">Hostel for boys in Patna</a></li>
+                        <li><a href="#">Hostel for girls in Patna</a></li>
+                        <li><a href="#">Hostel for family in Patna</a></li>
+                        <li><a href="#">Hostel for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Flats for rent in Patna</a></li>
+                        <li><a href="#">Flats for boys in Patna</a></li>
+                        <li><a href="#">Flats for girls in Patna</a></li>
+                        <li><a href="#">Flats for family in Patna</a></li>
+                        <li><a href="#">Flats for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Apartments for rent in Patna</a></li>
+                        <li><a href="#">Apartments for boys in Patna</a></li>
+                        <li><a href="#">Apartments for girls in Patna</a></li>
+                        <li><a href="#">Apartments for family in Patna</a></li>
+                        <li><a href="#">Apartments for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <ul class="footer-two-links">
+                        <li><a href="#">House for rent in Patna</a></li>
+                        <li><a href="#">House for boys in Patna</a></li>
+                        <li><a href="#">House for girls in Patna</a></li>
+                        <li><a href="#">House for family in Patna</a></li>
+                        <li><a href="#">House for couple in Patna</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Electrician in Delhi</a></li>
+                        <li><a href="#">Plumber in Delhi</a></li>
+                        <li><a href="#">Repair &amp; Maintenance in Delhi</a></li>
+                        <li><a href="#">Home Tuition in Delhi</a></li>
+                        <li><a href="#">Newspaper-Wala in Delhi</a></li>
+                        <li><a href="#">Salon in Delhi</a></li>
+                        <li><a href="#">Hair-Cut in Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Electrician in Varanasi</a></li>
+                        <li><a href="#">Plumber in Varanasi</a></li>
+                        <li><a href="#">Repair &amp; Maintenance in Varanasi</a></li>
+                        <li><a href="#">Home Tuition in Varanasi</a></li>
+                        <li><a href="#">Newspaper-Wala in Varanasi</a></li>
+                        <li><a href="#">Salon in Varanasi</a></li>
+                        <li><a href="#">Hair-Cut in Varanasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Electrician in Patna</a></li>
+                        <li><a href="#">Plumber in Patna</a></li>
+                        <li><a href="#">Repair &amp; Maintenance in Patna</a></li>
+                        <li><a href="#">Home Tuition in Patna</a></li>
+                        <li><a href="#">Newspaper-Wala in Patna</a></li>
+                        <li><a href="#">Salon in Patna</a></li>
+                        <li><a href="#">Hair-Cut in Patna</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="footer-two-links">
+                        <li><a href="#">Electrician in Kota</a></li>
+                        <li><a href="#">Plumber in Kota</a></li>
+                        <li><a href="#">Repair &amp; Maintenance in Kota</a></li>
+                        <li><a href="#">Home Tuition in Kota</a></li>
+                        <li><a href="#">Newspaper-Wala in Kota</a></li>
+                        <li><a href="#">Salon in Kota</a></li>
+                        <li><a href="#">Hair-Cut in Kota</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <br>
+                <a href="mailto:info@sheltown.com" style="color:#2ECAB6;">info@sheltown.com</a>
+                <br>
+                <p class="copyright-text">Copyright © 2020 All Rights Reserved
+
+                </p>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <br>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/sheltown.india" class="fab fa-facebook"
+                            aria-hidden="true"></a>
+                    </li>
+                    <li><a class="twitter" href="https://twitter.com/OwnShelt?s=20"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a class="dribbble" href="https://instagram.com/sheltown.india">
+                            <i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/company/sheltown"><i class="fab fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/.Footer Section-->
+</body>
+</html>

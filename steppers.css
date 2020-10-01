@@ -150,7 +150,12 @@ body {
         background-color: #e9ecef;
         border-radius: 0!important;
     }
-    
+    .stickytotop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
     /* Mark input boxes that gets an error on validation: */
     input.invalid {
         border-radius: 0px;

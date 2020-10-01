@@ -1,0 +1,303 @@
+.myaccount:hover{
+    border: 1px solid ;
+    color: #238074;
+    opacity: 0.8;
+}
+.avatar-cus{
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 10%;
+}
+.myaccount-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -25px!important;
+    float: left;
+    min-width: 10rem;
+    padding: 24px 25px 15px 25px;
+    margin: .125rem 0 0;
+    border-radius: 3%!important;
+
+}
+.myaccount-dropdown a {
+    padding: 10px  0   18px  0px!important;
+    font-size: 0.9000rem!important;
+    font-weight: 300!important;
+    border-bottom: 1px solid rgb(183, 181, 181)!important;
+}
+.myaccount-dropdown a:hover{
+    color: #2EC4B6!important;
+    font-size: 0.9999rem!important;
+
+}
+.app-inner {
+    color: #464646;
+    background-color: #f2f2f2;
+}
+
+
+@media (min-width: 900px) {
+    .container-myaccount{
+        max-width: 1200px;
+        margin: 0 auto;
+    }}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@media (min-width: 900px){
+.hide-d{
+  display: none;
+}
+.side-menu{
+    width: auto;
+    background: #f0f4f5;
+    overflow-y: auto;
+}
+
+#main {
+  margin-left: 300px;
+}
+@media (max-width: 1199px) {
+  .side-menu {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+/*--------------------------------------------------------------
+# Navigation Menu for Desktop
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+    padding-top: 30px;
+    margin: 0px 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: rgb(65, 60, 60);
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  
+}
+
+.nav-menu a i {
+  font-size: 15px;
+  padding-right: 8px;
+  color: rgb(65, 60, 60);
+  
+}
+.c-yp{
+  font-size: 15px;
+  padding-right: 8px;
+  color: rgb(65, 60, 60);
+
+}
+.c-yp:hover{
+  text-decoration: none;
+  color: #2ECAB6;
+  font-size:large;
+
+}
+.nav-menu a:hover,  .nav-menu li:hover > a {
+  text-decoration: none;
+  color: #2ECAB6;
+  font-size:large;
+
+}
+
+.nav-menu .active > a{
+    text-decoration: none;
+    color: #212431;
+
+}
+.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+color: #2ECAB6;
+  font-size:large;
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.hide-m{
+    display: none;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background:  #2ECAB6;
+  overflow-y: auto;
+}
+
+.side-menu .profile img {
+    margin: 16px auto;
+    display: block;
+    width: 81px;
+    border: 0px solid #2c2f3f;
+}
+
+.side-menu .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.side-menu .profile h1 a, .side-menu .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.side-menu .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  .side-menu {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding-top: 30px;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+
+.nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: white;
+}
+
+
+.c-yp{
+ color: white;
+
+}
+.c-yp:hover{
+
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .side-menu {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+    
+}
+
+

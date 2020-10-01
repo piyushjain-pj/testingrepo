@@ -116,7 +116,7 @@ $(function () {
         if (event.keyCode === 27) {
             $(".navbar-collapse").removeClass("show");
             $("body").removeClass("overlay-active");
-            $(".textout").show();
+            $(".textout").hide();
         }
     });
 

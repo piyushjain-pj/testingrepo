@@ -211,3 +211,17 @@ function SideStepIndicator(n) {
     //... and adds the "active" class to the current step:
     x[n].className += " active";
 }
+
+function hide_innerdiv() {
+  var i,x = document.getElementsByClassName("stickytotop");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace("stickytotop", "");
+  }
+
+}
+function show_innerdiv() {
+  var i, x = document.getElementsByClassName("hide-in-desktop");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" ", " stickytotop");
+  }
+  }
