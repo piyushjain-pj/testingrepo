@@ -1,12 +1,11 @@
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
+  console.log(x);
   x[n].style.display = "block";
   // ... and fix the Previous/Next buttons:
-movemybar(n)
+  movemybar(n)
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -22,6 +21,9 @@ movemybar(n)
   SideStepIndicator(n)
   
 }
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
 
 ///Moving bar
 function movemybar(n) {
@@ -36,8 +38,6 @@ function movemybar(n) {
             elem1.style.width = width + "%";
             elem1.innerHTML = width + "%";
             document.getElementById("progresstext").innerHTML = width;
-
-
 
         }
         else if (n == 1) {

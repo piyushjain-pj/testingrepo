@@ -35,13 +35,9 @@
     background-color: #f2f2f2;
 }
 
-
-@media (min-width: 900px) {
-    .container-myaccount{
-        max-width: 1200px;
-        margin: 0 auto;
-    }}
-
+.tab{
+  display: none;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -55,7 +51,11 @@
     background: #f0f4f5;
     overflow-y: auto;
 }
+.main_dashboard{
 
+  min-height: 40em;
+
+}
 #main {
   margin-left: 300px;
 }
@@ -86,7 +86,7 @@
   position: relative;
   white-space: nowrap;
 }
-.nav-menu a {
+.step-side a {
   display: flex;
   align-items: center;
   color: rgb(65, 60, 60);
@@ -97,44 +97,36 @@
   
 }
 
-.nav-menu a i {
+.step-side * {
   font-size: 15px;
   padding-right: 8px;
-  color: rgb(65, 60, 60);
-  
-}
-.c-yp{
-  font-size: 15px;
-  padding-right: 8px;
-  color: rgb(65, 60, 60);
-
-}
-.c-yp:hover{
-  text-decoration: none;
-  color: #2ECAB6;
-  font-size:large;
-
-}
-.nav-menu a:hover,  .nav-menu li:hover > a {
-  text-decoration: none;
-  color: #2ECAB6;
-  font-size:large;
-
+  color: rgb(65, 60, 60)
 }
 
-.nav-menu .active > a{
-    text-decoration: none;
-    color: #212431;
+.step-side:hover * {
+            color: white!important; 
+            background-color: #7baba5;
+            font-weight: 800;
 
 }
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-color: #2ECAB6;
-  font-size:large;
-  
-}
+.step-side.active * {
+            color: white!important; 
+            background-color: #7baba5;
+            font-weight: 800;
+            
 }
 
+.btn-mobile{
+  padding-left: 800px;
+}
 
+.tab-header{
+
+  padding: 2%;
+  border-bottom: 1px solid gainsboro;
+   
+}
+}
 
 
 
@@ -250,7 +242,7 @@ color: #2ECAB6;
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: white;
+  color: white!important;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -261,12 +253,12 @@ color: #2ECAB6;
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: white;
+  color: white!important;
 }
 
 
 .c-yp{
- color: white;
+ color: white!important;
 
 }
 .c-yp:hover{
@@ -294,10 +286,46 @@ color: #2ECAB6;
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #fff!important;
 }
 
-    
+.tab-header{
+
+  padding: 5%;
+  border-bottom: 1px solid gainsboro;
+   
+}
+.Basic-Edit-form {
+    margin: 8px 15px;
+    padding: 11px;
+}
+  
+.btn-mobile{
+  padding-left: 40px;
+}
 }
 
 
+
+
+/*  Basic Profile Tab in Desktop 
+*/
+@media (min-width: 900px){
+.Basic-Edit-form {
+    margin: 10px 138px;
+    padding: 17px;
+}
+
+}
+.Basic-Edit-form label{
+   color: #212431!important;
+   font-weight: 600;
+   font-style: normal;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.Basic-Edit-form input {
+
+  border-radius: 0%;
+     
+}

@@ -22,7 +22,7 @@
 
     <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
     <script type="text/javascript" src="counter.jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="myaccount.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -34,7 +34,7 @@
 </head>
 <body>
 <!--Header -->
-<header class="sticky-top scrolling-navbar">
+<header class="sticky-top scrolling-navbar ">
     <!--Navbar -->
     <nav style="box-shadow: none" class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold ">
             <a class="navbar-brand" href="#">
@@ -78,8 +78,26 @@
 <div class="app-inner">
     <!--Container for MyAccount-->
     <div class="container">
+        <div class="row mb-lg-0 mb-1">
+            <div class="col-12">
+                <div class="row white " style="flex-direction: row;">
+                    <div>
+                        <div>
+                            <img class="hoverable" alt="img"
+                                src="https://assets.nobroker.in/nb-new/public/Pyp-Form/resale_logo.png">
+                        </div>
+                    </div>
+                    <div class="btn-mobile">
+                        <button class="btn btn-preview btn-sm btn-info">Add Your Property</button>
+                    </div>
+                    <div >
+                        <button class="btn btn-preview btn-sm btn-danger">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--My Account side and Main Bar-->
-        <div class="row py-3">
+        <div class="row main_dashboard">
             <!--Side Navigation Bar-->
             <div class="col-lg-3 border px-0" style="border-bottom: 1px solid #dbdbdb;">
                 <!-- ======= side menu ======= -->
@@ -95,29 +113,25 @@
                         </div>
                         <nav class="nav-menu">
                             <ul>
-                                <li class="active"><a id="basicTab" href="#basic"><i class="far fa-user-circle"></i> <span>Basic Profile</span></a></li>
+                                <li class="step-side active"><a id="basicTab" onclick="getTab(0)"><i class="far fa-user-circle"></i><span>Basic Profile</span></a></li>
 
-
-                                <li class=""><a href="#payments" id="paymentsTab" data-toggle="pill">
-                                <i class="fas fa-credit-card"></i><span>Your Payments</span></a>
+                                <li class="step-side  "><a href="#payments" id="paymentsTab" onclick="getTab(1)"><i class="fas fa-credit-card"></i><span>Your Payments</span></a>
                                 </li>
 
-                                <li class=" nav-header " data-toggle="collapse" id="listingMenuTab" data-target="#listingMenu">
-
-                                    <a data-toggle="pill"><i class="fas fa-th-list"></i><span class="c-yp">Your Properties</span></a>
-                            
+                                <li class="step-side " data-toggle="collapse" id="listingMenuTab" data-target="#listingMenu"><a data-toggle="pill" "><i class="fas fa-th-list"></i>
+                                    <span class="c-yp">Your Properties</span></a>
                                     <ul class="nav nav-list collapse" id="listingMenu" style="margin-left:15px;font-size:smaller;">
-                                        <li class=""><a href="#rentListings" id="rentListingsTab" data-toggle="pill">Rent (0)</a></li>
-                                        <li class=""><a href="#flatmatesListing" id="flatmatesListingTab" data-toggle="pill">flatmates (0)</a>
+                                        <li class="step-side "><a href="#rentListings" id="rentListingsTab" data-toggle="pill" onclick="getTab(2)">Rent (0)</a></li>
+                                        <li class="step-side "><a href="#flatmatesListing" id="flatmatesListingTab" data-toggle="pill" onclick="getTab(3)">Flatmates (0)</a>
                                         </li>
-                                        <li class=""><a href="#saleListings" id="saleListingsTab" data-toggle="pill">Sale (0)</a></li>
-                                        <li class=""><a href="#pgListings" id="pgListingsTab" data-toggle="pill">PG (0)</a></li>
-                                        <li class=""><a href="#crListings" id="crListingsTab" data-toggle="pill">Commercial Rent (0)</a></li>
-                                        <li class=""><a href="#csListings" id="csListingsTab" data-toggle="pill">Commercial Buy (0)</a></li>
+                                        <li class="step-side "><a href="#saleListings" id="saleListingsTab" data-toggle="pill" onclick="getTab(4)" >Sale (0)</a></li>
+                                        <li class="step-side "><a href="#pgListings" id="pgListingsTab" data-toggle="pill" onclick="getTab(5)">PG (0)</a></li>
+                                        <li class="step-side "><a href="#crListings" id="crListingsTab" data-toggle="pill" onclick="getTab(6)">Commercial Rent (0)</a></li>
+                                        <li class="step-side "><a href="#csListings" id="csListingsTab" data-toggle="pill" onclick="getTab(7)">Commercial Buy (0)</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="hide-d "><a class="" href="#signout"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
+                                <li class="hide-d "><a href="#signout"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
                             </ul>
                         </nav><!-- .nav-menu -->
 
@@ -129,11 +143,128 @@
         
         <!--Middle Content Bar-->
         <div class="col-lg-9 border px-0 white">
-
-            piyush
-            
-
+        <div class="tab">
+            <div class="row mx-2 mx-lg-0">
+                <div class="col-lg-12">
+                <div class="tab-header"><strong>Edit your profile</strong>
+                </div>
+                <div class="Basic-Edit-form">
+                    <form action="#" enctype="multipart/form-data">
+                
+                        <label for="textInput">Full Name</label>
+                        <input type="text" id="textInput" class="form-control mb-4" placeholder="ex- Jon Dae">
+                
+                        <label for="emailinput">Email Address</label>
+                        <input type="password" id="emailinput" class="form-control mb-4" placeholder="ex-example@gmail.com">
+                
+                        <label for="phoneinput">Phone Number </label> <input type="password" id="phoneinput" class="form-control mb-4"
+                            placeholder="ex-+917000-000-000">    
+                        <div class="d-flex justify-content-between mb-3">
+                        <div class="py-2 custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Get updates on<i
+                                    class="fab fa-whatsapp light-green-text mx-1"></i> WhatsApp</label>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-block" type="submit">Update</button>
+                    </form>
+                </div>
+                </div>
+            </div>
         </div>
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="tab-header"><strong>Your Payments</strong>
+                </div>
+                <div class="h4 text-grey py-1 px-5">
+                    No Payments yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-header"><strong>Your Property</strong>
+                    </div>
+                <div class="h4 text-grey py-1 px-5">
+                    No Rent Properties listed by you yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-header"><strong>Your Property</strong>
+                    </div>
+                <div class="h4 text-grey py-1 px-5">
+                    No Flatmates Properties listed by you yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-header"><strong>Your Property</strong>
+                    </div>
+                    <div class="h4 text-grey py-1 px-5">
+                    No Sale Properties listed by you yet!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="tab-header"><strong>Your Property</strong>
+                </div>
+                <div class="h4 text-grey py-1 px-5">
+                No PG Properties listed by you yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="tab-header"><strong>Your Property</strong>
+                </div>
+                <div class="h4 text-grey py-1 px-5">
+                    No Commercial Rent Properties listed by you yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="tab">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="tab-header"><strong>Your Property</strong>
+                </div>
+                <div class="h4 text-grey py-1 px-5">
+                    No Commercial Buy Properties listed by you yet!
+                </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--/.Middle Content Bar-->
         </div>
         <!--/.My Account side and Main Bar-->
@@ -486,5 +617,74 @@
     </div>
 </section>
 <!--/.Footer Section-->
-</body>
+
+
+<script> 
+//my account dasboard tab
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form ...
+  topFunction()
+  prevtTap=n
+  var x = document.getElementsByClassName("tab");
+  console.log(x);
+  x[n].style.display = "block";
+  SideStepIndicator(n) 
+}
+
+function getTab(n) {
+  var x = document.getElementsByClassName("tab");
+  if (n == 0) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 1) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 2) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 3) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 4) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 5) {
+    x[prevtTap].style.display = "none"
+    showTab(n)
+  }
+  else if (n == 6) {
+      x[prevtTap].style.display = "none"
+      showTab(n)
+  }
+  else if (n == 7) {
+      x[prevtTap].style.display = "none"
+      showTab(n)
+  }
+}
+
+function SideStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step-side");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class to the current step:
+  x[n].className += " active";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+</y>
 </html>
