@@ -69,8 +69,10 @@ List Property Process Sections
                 <div class="col-sm-12 pb-1 mb-1">
                     <div class="row white py-1" style="flex-direction: row;">
                         <div class="col-lg-4 col-sm-12">
-                            <div><img class="hoverable" style="padding-top: 14px;" alt="img"
-                                    src="https://assets.nobroker.in/nb-new/public/Pyp-Form/resale_logo.png">
+                            <div>
+                        <a href="https://www.sheltown.in" style="color: inherit;">
+                            <p class="h4 pt-2 pl-3" style="font-family: 'Courier New', Courier, monospace;">SheltOwn</p>
+                        </a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 " style="padding-top: 30px">
@@ -91,8 +93,11 @@ List Property Process Sections
                     <div class="row white pt-3 mb-2" style="flex-direction: row;">
                         <div class="col-8 pl-1">
                         <div>
-                        <img class="hoverable" alt="img"
-                        src="https://assets.nobroker.in/nb-new/public/Pyp-Form/resale_logo.png">
+                        <div>
+                        <a href="https://www.sheltown.in" style="color: inherit;">
+                            <p class="h4 pt-2 pl-3" style="font-family: 'Courier New', Courier, monospace;">SheltOwn</p>
+                        </a>
+                        </div>
                         </div>
                         </div>
                         <div class="col-4">
@@ -138,7 +143,7 @@ List Property Process Sections
 <!--Form Middle Section-->
 
 <div  class="col-lg-8 mx-lg-1 px-0 white">
-        <form id="addnewproperty" action="action.html">
+        <form id="addnewproperty" action="listedpropertymessage.html"  method="POST"  enctype="multipart/form-data">
             <!--Property details Section-->
             <div class="tab">
                 <!-- Heading -->
@@ -158,8 +163,8 @@ List Property Process Sections
                             <option value="4">Option 4</option>
                             <option value="5">Option 5</option>
                         </select>
-                        <label class="mr-sm-2" for="inlineFormCustomSelect1">BHK Type*</label>
-                        <select name="bhktype" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect1">
+                        <label class="mr-sm-2" for="inlineFormCustomBHKType">BHK Type*</label>
+                        <select name="bhktype" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomBHKType">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -173,35 +178,35 @@ List Property Process Sections
                             <option value="4">Option 4</option>
                             <option value="5">Option 5</option>
                         </select>
-                        <label for="inlineFormInputGroupUsername">Property Size*</label>
+                        <label for="inlineFormInputpropertysize">Property Size*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="bg-white input-group-text"><i class="fa fa-ruler-combined"></i>
                                 </div>
                             </div>
-                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                placeholder="Property in Sq.ft">
+                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputpropertysize"
+                                placeholder="Size in sq.ft">
                         </div>
                         <!--/Blue select-->
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-3 ">
                         <div class="">
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Floor*</label>
-                            <select name="floor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect">
+                            <label class="mr-sm-2" for="inlineFormCustomFloor">Floor*</label>
+                            <select name="floor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomFloor">
                                 <option selected>Choose...</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Total Floor*</label>
-                            <select name="totalfloor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomSelect">
+                            <label class="mr-sm-2" for="inlineFormCustomTotalFloor">Total Floor*</label>
+                            <select name="totalfloor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomTotalFloor">
                                 <option selected>Choose...</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Facing</label>
-                            <select name="propertyfacing" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="mr-sm-2" for="inlineFormCustomFacing">Facing</label>
+                            <select name="propertyfacing" class="custom-select mr-sm-2" id="inlineFormCustomFacing">
                                 <option selected>Choose...</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -235,24 +240,24 @@ List Property Process Sections
                             <option value="4">Option 4</option>
                             <option value="5">Option 5</option>
                         </select>
-                        <label for="inlineFormInputGroupUsername">Street Area*</label>
+                        <label for="inlineFormInputGroupStreetArea">Street Area*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="bg-white input-group-text">₹</div>
                             </div>
-                            <input name="streetarea" type="text" class="form-control " id="inlineFormInputGroupUsername"
+                            <input name="streetarea" type="text" class="form-control " id="inlineFormInputGroupStreetArea"
                                 placeholder="Strea/Area">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-2
                     ">
-                        <label for="inlineFormInputGroupUsername">Locality*</label>
+                        <label for="inlineFormInputGroupLocality">Locality*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="bg-white input-group-text"><i class="fa fa-map-marker-alt"></i></div>
                             </div>
-                            <input name="locality" type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                placeholder="Property in Sq.ft">
+                            <input name="locality" type="text" class="form-control" id="inlineFormInputGroupLocality"
+                                placeholder="Locality/landmark/famousplace">
                         </div>
                     </div>
                 </div>
@@ -273,13 +278,13 @@ List Property Process Sections
                     <div class="col-lg-6">
                         <label>property available for*</label><br>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input name=" propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked1"
-                                name="defaultExample2">
+                            <input name="propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked1"
+                                >
                             <label class="custom-control-label" for="defaultChecked1">Rental Only</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
                             <input name="propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked2"
-                                name="defaultExample2">
+                                >
                             <label class="custom-control-label" for="defaultChecked2">Lease Only</label>
                         </div>
                         <br>
@@ -293,7 +298,7 @@ List Property Process Sections
                                 placeholder="Enter rent per month">
                         </div>
                         <!-- Default checked -->
-                        <div class="custom-control custom-checkbox mb-3">
+                        <div class="custom-control custom-checkbox mb-1 mt-3">
                             <input name="negotiation" type="checkbox" class="custom-control-input" id="defaultChecked3">
                             <label class="custom-control-label" for="defaultChecked3">Negotiation</label>
                         </div>
@@ -405,7 +410,7 @@ List Property Process Sections
                                 <span class="fab fa-whatsapp fa-2x light-blue-text">
                                 </span><span class="h5">Send Us on Whatsapp</span><br>
                                 <hr class="p-1">
-                                <span class="text-center text-info font-weight-bold mx-auto">+91-0000-000-000</span>
+                                <span class="text-center text-info font-weight-bold mx-auto">+91-7428-770-297</span>
                             </center>
             
                         </div>
@@ -417,7 +422,7 @@ List Property Process Sections
                                 <span class="far fa-envelope fa-2x light-blue-text">
                                 </span><span class="h5">Send Us on Mail</span><br>
                                 <hr class="p-1">
-                                <span class="text-center text-info font-weight-bold mx-auto">examplele@gmail.com</span>
+                                <span class="text-center text-info font-weight-bold mx-auto">info@sheltown.com</span>
                             </center>
             
                         </div>
@@ -768,8 +773,7 @@ List Property Process Sections
                 <!-- Title -->
                 <h4 class=" card-title h6 font-weight-bold h6"><a class="text-default">Get Tenants Faster</a></h4>
                 <!-- Text -->
-                <p class="card-text" style="font-size: 12px;">Subscribe to our owner plans and find Tenants quickly and
-                    with ease</p>
+                <p class="card-text" style="font-size: 12px;">Subscribe to our owner plans and find Tenants quickly and with ease</p>
                 <center>
                     <div class="">
                         <!--Section: Content-->
@@ -820,9 +824,6 @@ List Property Process Sections
                         </section>
                         <!--Section: Content-->
                     </div>
-                    <!-- Button -->
-                    <a href="#" class="btn theme-color btn-mp p-2 py-1"
-                        style="text-transform: capitalize; color: white;">Show interest</a>
 
                 </center>
 

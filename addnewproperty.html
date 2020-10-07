@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - SheltOwn</title>
+    <title>list-your-property-for-rent-sale</title>
     <!-- SheltOwn icon -->
     <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
     <!-- Font Awesome -->
@@ -17,311 +17,246 @@
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="addproperty.css">
     <link rel="stylesheet" href="myaccount.css">
 
+    
     <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
     <script type="text/javascript" src="counter.jquery.js"></script>
     <script type="text/javascript" src="myaccount.js"></script>
+
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
-        <style>
-        </style>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+        function hiddenDivitem() {
+            var x = document.getElementById("HiddenDiv");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+    </style>
 </head>
 <body>
-<!--Header -->
-<header class="sticky-top scrolling-navbar ">
-    <!--Navbar -->
-    <nav style="box-shadow: none" class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold ">
+    <!--Header -->
+    <header class="sticky-top scrolling-navbar ">
+        <!--Navbar -->
+        <nav style="box-shadow: none" class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold ">
             <a class="navbar-brand" href="#">
-            <img src="https://sheltown.in/static/sheltownapp/img/logo.png" width="150" height="50" alt="logo"></a>
+                <img src="https://sheltown.in/static/sheltownapp/img/logo.png" width="150" height="50" alt="logo"></a>
             <button class="mobile-nav-toggle hide-d" type="button">
-            <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </button>
             <div class="navbar-collapse" id="main_nav">
                 <div class="offcanvas-header mt-3">
-                <button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times" aria-hidden="true" style="font-size : 28px;"></i></button>
+                    <button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times"
+                            aria-hidden="true" style="font-size : 28px;"></i></button>
                 </div>
                 <ul class="navbar-nav ml-auto mr-2">
-                <!--<li class="nav-item">
-                        <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
-                    </li>
+                    <!--<li class="nav-item">
+                            <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+                        </li>
+    
+                    -->
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
-                    </li>
-
-                --> 
-                <li class="nav-item">
                         <a class="nav-link p-0">
-                        <spna style="font-weight: 600; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Alex Smith<br><p class="m-0">example@gmail.com</p></spna>
+                            <spna
+                                style="font-weight: 600; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                Alex Smith<br>
+                                <p class="m-0">example@gmail.com</p>
+                            </spna>
                         </a>
-                </li>
-                <!--
-                <li class="nav-item dropdown">
-                        <a class="myaccount nav-link dropdown-toggle" style="height: 54px;" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="px-2">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle z-depth-0 " alt="avatar image" height="35">
-                        </span>
-                        <spna class="px-2" style="font-weight: 600; font-family: 'Courier New', Courier, monospace;">Alex Smith</spna>
-                        </a>
-                        <div class="z-depth-1 dropdown-menu myaccount-dropdown dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                        <a class="dropdown-item" href="myaccount.html"><i class="fas fa-user-circle px-2"></i>Profile</a>
-                        <a class="dropdown-item" href="myaccount.html"><i class="fas fa-tachometer-alt px-2"></i>My Dashboard</a>
-                        <a class="dropdown-item" href="myaccount.html"><i class="fas fa-list px-2 light-gray"></i>My Listings</a>
-                        <a class="dropdown-item" style="border-bottom: none!important;"href="#"><i class="fa fa-sign-out-alt px-2"></i>Sign Out</a>
-                        </div>
-                </li>
-                -->
+                    </li>
+                    -->
+    
+                    <li class="nav-item dropdown">
+                            <a class="myaccount nav-link dropdown-toggle" style="height: 54px;" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="px-2">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle z-depth-0 " alt="avatar image" height="35">
+                            </span>
+                            <spna class="px-2" style="font-weight: 600; font-family: 'Courier New', Courier, monospace;">Alex Smith</spna>
+                            </a>
+                            <div class="z-depth-1 dropdown-menu myaccount-dropdown dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="myaccount.html"><i class="fas fa-user-circle px-2"></i>Profile</a>
+                            <a class="dropdown-item" href="myaccount.html"><i class="fas fa-tachometer-alt px-2"></i>My Dashboard</a>
+                            <a class="dropdown-item" href="myaccount.html"><i class="fas fa-list px-2 light-gray"></i>My Listings</a>
+                            <a class="dropdown-item" style="border-bottom: none!important;"href="#"><i class="fa fa-sign-out-alt px-2"></i>Sign Out</a>
+                            </div>
+                    </li>
                 </ul>
             </div>
         </nav>
         <!--/.Navbar -->
-</header>   
-<!-- End header-->
+    </header>
+    <!-- End header-->
 
-<!--My Account Outer div-->
-<div class="app-inner">
-    <!--Container for MyAccount-->
-    <div class="container">
-        <div class="row mb-lg-0 mb-1">
-            <div class="col-12">
-                <div class="row white " style="flex-direction: row;">
-                    <div>
+
+<div class="container mt-2">
+        <div class="card z-depth-1">
+            <!-- Card content -->
+            <div class="card-body py-0" id="#Listnow">
+                <div class="row">
+                    <div class="col-lg-4 px-0 py-1 ">
+                        <!-- Default form contact -->
+                        <div class="px-0">
+                            <img class="img-fluid formimage z-depth-1-half rounded" src="img/becomehotelimage.jpg"
+                                alt="Paperwork">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
                         <div>
-                        <a href="https://www.sheltown.in" class="hide-m" style="color: inherit;"><p class="h4 pt-2 pl-3" style="font-family: 'Courier New', Courier, monospace;">SheltOwn</p></a>
+                            <div style="font-family: 'Times New Roman', Times, serif;"
+                                class="text-center py-4 h3 dark-grey-text">List Your Property Here For Free</div>
+                            <!-- Default form register -->
+                            <form class="text-center p-2" method="POST" action="AddPropertyFormPage.html" enctype="multipart/form-data">
+                                <div class="form-row mb-2">
+                                    <div class="col-12">
+                                        <!-- city -->
+                                        <select class="browser-default custom-select mb-4">
+                                            <option value="" disabled>Choose City</option>
+                                            <option value="1" selected>Select Your City</option>
+                                            <option value="2">Delhi</option>
+                                            <option value="3">Mumbai</option>
+                                            <option value="4">Indore</option>
+                                        </select>
+    
+                                    </div>
+                                    <div class="col text-left">
+                                        <div class="py-2 custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="defaultRegisterFormNewsletter">
+                                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Get
+                                                updates on<i class="fab fa-whatsapp light-green-text mx-1"></i>
+                                                WhatsApp</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-12 py-2">
+                                        <p class="text-grey ">Property Type</p>
+                                        <hr class="w-header py-0">
+                                        <center>
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a style="color:grey" class="nav-link proptype active" id="home-tab"
+                                                        data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                                        aria-selected="true">Residential</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a style="color:grey" class="nav-link proptype " id="profile-tab"
+                                                        data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                                        aria-selected="false">Commercial</a>
+                                                </li>
+                                            </ul>
+                                        </center>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <!-- Default inline 1-->
+                                                <div class="py-3 px-auto">
+                                                    <p class="font-weight-bold">Select Property Ad Type</p>
+                                                    <hr class="w-header py-0">
+    
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="defaultInline1"
+                                                            name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline1">Rent</label>
+                                                    </div>
+    
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="defaultInline2"
+                                                            name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline2">Resale</label>
+                                                    </div>
+    
+                                                    <!-- Default inline 3-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="defaultInline3"
+                                                            name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline3">PG/Hostel</label>
+                                                    </div>
+                                                    <!-- Default inline 3-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input"
+                                                            id="defaultInline33" name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline33">Flatmates</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+                                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <!-- Default inline 1-->
+                                                <div class="py-3 px-auto py-3">
+                                                    <p class="font-weight-bold ">Select Property Ad Type</p>
+                                                    <hr class="w-header py-0">
+    
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input"
+                                                            id="defaultInline21" name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline21">Rent</label>
+                                                    </div>
+    
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input"
+                                                            id="defaultInline22" name="inlineDefaultRadiosExample">
+                                                        <label class="custom-control-label"
+                                                            for="defaultInline22">Sale</label>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- Sign up button -->
+                                    <button class="btn btn-default btn-block" type="submit"><span class="btnsignup">Start
+                                            Listing Property for Free</span></button>
+    
+    
+                            </form>
+                            <!-- Default form register -->
                         </div>
-                    </div>
-                    <div class="btn-mobile">
-                        <a role="link" href="addnewproperty.html" class="btn btn-preview btn-sm btn-info">Add New Property</a>
-                    </div>
-                    <div >
-                        <button class="btn btn-preview btn-sm btn-danger">Sign Out</button>
+    
                     </div>
                 </div>
+    
             </div>
         </div>
-        <!--My Account side and Main Bar-->
-        <div class="row main_dashboard">
-            <!--Side Navigation Bar-->
-            <div class="col-lg-3 border px-0" style="border-bottom: 1px solid #dbdbdb;">
-                <!-- ======= side menu ======= -->
-                <div class="side-menu">
-                    <div class="d-flex flex-column">
-                        <div class="profile hide-d">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg"  +alt="" class="img-fluid rounded-circle">
-                            <h1 class="text-light"><a href="myaccount.html">Alex Smith</a></h1>
-                        </div>
-                        <div class="profile px-2 hide-m">
-                            <p class="h6 pt-3 pb-2 px-2 text-grey">Manage Your Account</p>
-                            <hr class="my-0 py-2">
-                        </div>
-                        <nav class="nav-menu">
-                            <ul>
-                                <li class="left-side-nav active">
-                                    <a id="basicTab" onclick="getTab(0)"><i class="far fa-user-circle"></i><span>Basic Profile</span></a>
-                                </li>
-
-                                <li class="left-side-nav ">
-                                    <a href="#payments" id="paymentsTab" onclick="getTab(1)"><i class="fas fa-credit-card"></i><span>Your Payments</span></a>
-                                </li>
-
-                                <li class="left-side-nav ">
-                                    <a href="#payments" id="BookingsTab" onclick="getTab(2)"><i class="fas fa-file-import"></i><span>Bookings Received</span></a>
-                                </li>
-
-
-                                <li data-toggle="collapse" id="listingMenuTab" data-target="#listingMenu">
-                                    <a><i class="fas fa-th-list"></i>
-                                    <span class="c-yp pl-lg-2">Your Properties</span>
-                                    </a>
-                                    <ul class="nav nav-list collapse" id="listingMenu">
-                                        <li class="left-side-nav ">
-                                            <a href="#rentListings" id="rentListingsTab" data-toggle="pill" onclick="getTab(3)">Rent (0)</a>
-                                        </li>
-                                        <li class="left-side-nav ">
-                                            <a href="#flatmatesListing" id="flatmatesListingTab" data-toggle="pill" onclick="getTab(4)">Flatmates (0)
-                                            </a>
-                                        </li>
-                                        <li class="left-side-nav ">
-                                            <a href="#saleListings" id="saleListingsTab" data-toggle="pill" onclick="getTab(5)" >Sale (0)</a>
-                                        </li>
-                                        <li class="left-side-nav ">
-                                            <a href="#pgListings" id="pgListingsTab" data-toggle="pill" onclick="getTab(6)">PG (0)</a>
-                                        </li>
-                                        <li class="left-side-nav ">
-                                            <a href="#crListings" id="crListingsTab" data-toggle="pill" onclick="getTab(7)">Commercial Rent (0)</a>
-                                        </li>
-                                        <li class="left-side-nav">
-                                            <a href="#csListings" id="csListingsTab" data-toggle="pill" onclick="getTab(8)">Commercial Buy (0)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                <li class="hide-d "><a href="#signout"><i class="fa fa-sign-out-alt"></i>Sign Out</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- .nav-menu -->
-                    </div>
-                </div>
-                <!-- End Header -->
-            </div>
-        <!--/.Side Navigation Bar-->
-        
-        <!--Middle Content Bar-->
-        <div class="col-lg-9 border px-0 white">
-        <div class="tab">
-            <div class="row mx-2 mx-lg-0">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Edit your profile</strong>
-                </div>
-                <div class="Basic-Edit-form">
-                    <form action="#" enctype="multipart/form-data">
-                
-                        <label for="textInput">Full Name</label>
-                        <input type="text" value="Alex smith" id="textInput" class="form-control mb-4" placeholder="ex- Jon Dae">
-                
-                        <label for="emailinput">Email Address</label>
-                        <input type="email" id="emailinput" value="alexsmith2gmail.com" class="form-control mb-4" placeholder="ex-example@gmail.com">
-                
-                        <label for="phoneinput">Phone Number </label> 
-                        <input type="mobile" id="phoneinput" value="9286363773" class="form-control mb-4" placeholder="ex-+91-0000-000-000"> 
-
-                        <div class="d-flex justify-content-between mb-3">
-                        <div class="py-2 custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-                        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Get updates on<i class="fab fa-whatsapp light-green-text mx-1"></i> WhatsApp</label></div>
-                        </div>
-                        <button type="submit" class="btn btn-info btn-block" type="submit">Update</button>
-                    </form>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Your Payments</strong>
-                </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Payments yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-        
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Bookings Received</strong>
-                </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Bookings received yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tab-header"><strong>Your Property</strong>
-                    </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Rent Properties listed by you yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tab-header"><strong>Your Property</strong>
-                    </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Flatmates Properties listed by you yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tab-header"><strong>Your Property</strong>
-                    </div>
-                    <div class="h4 text-grey py-1 px-5">
-                    No Sale Properties listed by you yet!
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Your Property</strong>
-                </div>
-                <div class="h4 text-grey py-1 px-5">
-                No PG Properties listed by you yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Your Property</strong>
-                </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Commercial Rent Properties listed by you yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="tab">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="tab-header"><strong>Your Property</strong>
-                </div>
-                <div class="h4 text-grey py-1 px-5">
-                    No Commercial Buy Properties listed by you yet!
-                </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--/.Middle Content Bar-->
-        </div>
-        <!--/.My Account side and Main Bar-->
-    </div>
-    <!--/.Container for MyAccount-->
 </div>
-<!--/.My Account Outer div-->
+<div class="container py-3">
+<div class="callus theme-color text-center">
+    <p class="p-2 mb-1 px-2 pb-0 font-weight-light"><i class="fa fa-phone-alt"></i>
+        Give a missed call to +91-7428-770-297 or WhatsApp +91-7428-770-297 to get help with your property listing</p>
+    </div>
+</div>
+
+</div>
 
 
-<!--Footer Section-->
+
+<!---Footer section will here-->
+<!--Footer one -->
+
 <footer class="site-footer py-5 mt-1 ">
     <div class="container">
         <div class="row">
@@ -663,78 +598,5 @@
         </div>
     </div>
 </section>
-<!--/.Footer Section-->
-
-
-<script> 
-//my account dasboard tab
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
-
-function showTab(n) {
-  // This function will display the specified tab of the form ...
-  topFunction()
-  prevtTap=n
-  var x = document.getElementsByClassName("tab");
-  console.log(x);
-  x[n].style.display = "block";
-  SideStepIndicator(n) 
-}
-
-function getTab(n) {
-  var x = document.getElementsByClassName("tab");
-  if (n == 0) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 1) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 2) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 3) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 4) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 5) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-  }
-  else if (n == 6) {
-      x[prevtTap].style.display = "none"
-      showTab(n)
-  }
-  else if (n == 7) {
-      x[prevtTap].style.display = "none"
-      showTab(n)      
-  }
-  else if (n == 8) {
-    x[prevtTap].style.display = "none"
-    showTab(n)
-}
-}
-function SideStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("left-side-nav ");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-</script>
 </body>
 </html>

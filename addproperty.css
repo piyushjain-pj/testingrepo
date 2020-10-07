@@ -17,10 +17,7 @@
     max-width: 192px;
 }
 
-
-.fixleftside {
-
-}}
+}
 
 /*.list-group-item-action:focus, .list-group-item-action:hover {
     z-index: 1;
@@ -126,4 +123,66 @@ input:focus,select:focus {
     color: #000;
     background-color: #0addcb!important;
     border-color: #69d9cac9!important;
+}
+
+
+@media(max-width: 800px){
+    .Congo-page{
+        padding: 30px 25px 10px 20px;
+
+    }
+
+    .listing-image{
+        padding: 0%;
+
+    }
+    .congo-head {
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+
+    }
+    .congo-text{
+    font-size: 12px;
+    font-family: auto;
+    }
+
+    .btn-congo a {
+        text-transform: capitalize;
+
+    }
+
+    .congo-text-2 {
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+@media(min-width:1000px){
+    .Congo-page{
+        padding: 30px 
+
+    }
+    .congo-head {
+    opacity: 0.9;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 4px;
+
+    }
+
+    .listing-image{
+        padding: 0%;
+
+    }
+    .btn-congo a {
+        text-transform: capitalize;
+
+    }
+    .congo-text-2 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
