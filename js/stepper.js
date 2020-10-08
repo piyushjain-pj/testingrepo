@@ -1,8 +1,8 @@
 
 function showTab(n) {
+  console.log(n);
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
-  console.log(x);
   x[n].style.display = "block";
   // ... and fix the Previous/Next buttons:
   movemybar(n)
@@ -95,57 +95,68 @@ function movemybar(n) {
 function getTab(n) {
     var x = document.getElementsByClassName("tab");
     if (n==0){
+        currentTab = n
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
         x[4].style.display = "none"
         x[5].style.display = "none"
-        showTab(n)
+        showTab(currentTab)
     }
     else if (n==1){
         if (n == 1 && !validateForm()) return false;
+        currentTab = n
         x[0].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
         x[4].style.display = "none"
         x[5].style.display = "none"
-        showTab(n)
+        showTab(currentTab)
+      
     }
     else if (n==2){
+      currentTab = n
       if (n == 2 && !validateForm()) return false;
         x[1].style.display = "none"
         x[0].style.display = "none"
         x[3].style.display = "none"
         x[4].style.display = "none"
         x[5].style.display = "none"
-        showTab(n)
+        showTab(currentTab)
+       
     }
     else if (n==3){
+      currentTab = n
       if (n == 3 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[0].style.display = "none"
         x[4].style.display = "none"
         x[5].style.display = "none"
-        showTab(n)
+      showTab(currentTab)
+
     }
     else if(n==4){
+      currentTab = n
       if (n == 4 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
         x[0].style.display = "none"
         x[5].style.display = "none"
-        showTab(n)
+      showTab(currentTab)
+
     }
     else if(n==5){
+      currentTab = n
       if (n == 5 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
         x[4].style.display = "none"
         x[0].style.display = "none"
-        showTab(n)
+      showTab(currentTab)
+
     }
 }
 
