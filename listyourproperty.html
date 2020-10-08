@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Become Partner</title>
+    <title>List Your Property - SheltOwn</title>
     <!-- SheltOwn icon -->
     <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
     <!-- Font Awesome -->
@@ -17,11 +16,13 @@
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/common.style.css">
+    <link rel="stylesheet" href="css/footer.style.css">
 
     <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="counter.jquery.js"></script>
+    <script type="text/javascript" src="js/counter.jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"> </script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -29,21 +30,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript">
-    function hiddenDivitem() {
-    var x = document.getElementById("HiddenDiv");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    </script>
-    <style>
-    </style>
 </head>
-
-
 <body>
 <!--Navbar -->
 <header class="sticky-top">
@@ -53,24 +40,25 @@
         <button class="navbar-toggler" type="button" data-trigger="#main_nav">
         <span class="fa fa-bars"></span>
         </button>
+
         <div class="navbar-collapse" id="main_nav">
-            <div class="offcanvas-header mt-3">
-                <button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times"aria-hidden="true" style="font-size : 28px;"></i></button>
-            </div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
-                </li>
-            </ul>
+	        <div class="offcanvas-header mt-3">
+	        	<button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times"aria-hidden="true" style="font-size : 28px;"></i></button>
+	        </div>
+	        <!--Navbar Menu-->
+	        <ul class="navbar-nav ml-auto">
+	            <li class="nav-item">
+	                <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+	            </li>
+	        </ul>
         </div>
     </nav>
 </header>
 <!--/.Navbar -->
 <!-- End header-->
-
 <!--Main Sections start here-->
 <main role="main" >
 <!--Carousel Wrapper-->
@@ -120,6 +108,8 @@
     </a>
 </div>
 <!--/.Carousel Wrapper-->
+
+<!--Counters div-->
 <center>
 <div class="container pt-5 counter-div">
     <div class="row w-100">
@@ -160,7 +150,7 @@
             </div>
 
             </div>
-                <div class="col-sm-3-c col-lg-3 col-md-4 col-sm-3-c  mb-5">
+            <div class="col-sm-3-c col-lg-3 col-md-4 col-sm-3-c  mb-5">
                         <div class="card counter border-info mx-sm-1 p-3">
                             <div class="card border-info shadow text-info p-3 my-card"><i class="fa fa-city fa-counter " aria-hidden="true"></i>
                             </div>
@@ -172,172 +162,201 @@
                             </div>
                         </div>
                     </div>
-        </div>
-    </div>
-</center>
-
-<div class="container mt-2" >
-<div class="card z-depth-1">
-    <!-- Card content -->
-    <div class="card-body py-0" id="#Listnow">
-        <div class="row">
-        <div class="col-lg-4 px-0 py-1 ">
-            <!-- Default form contact -->
-            <div class="px-0">
-            <img class="img-fluid formimage z-depth-1-half rounded" src="img/becomehotelimage.jpg" alt="Paperwork">
+               </div>
             </div>
-        </div>
-        <div class="col-lg-8">
-                <div>
-                    <div style="font-family: 'Times New Roman', Times, serif;" class="text-center py-4 h3 dark-grey-text">List Your Property Here For Free</div>
-                    <!-- Default form register -->
-                    <form class="text-center p-2" method="POST" action="AddPropertyFormPage.html" enctype="multipart/form-data">
-                        <div class="form-row mb-2">
-                            <div class="col mb-3">
-                                <!-- First name -->
-                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
-                            </div>
-                            
-                            <div class="col">
-                                <!-- Last name -->
-                                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="form-row mb-1">
-                        <!-- E-mail -->
-                        <div class="col-sm-6 input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-at light-info-text"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Email address" aria-label="E-mail"
-                                aria-describedby="basic-addon1">
-                            </div>
-                      
-    
-                        <div class="col-sm-6 input-group mb-3">
-                        <!-- Phone number -->
-                        <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone-alt light-info-text"></i></span>
-                            </div>
-                        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
-                            aria-describedby="defaultRegisterFormPhoneHelpBlock">
-                        </div>
-                        </div>
-                    
+</center>
+<!--/.Counters div-->
 
-                        <div class="form-row mb-2">
-                        <div class="col-12">
-                            
-                        <!-- Phone number -->
-                        <select class="browser-default custom-select mb-4">
-                            <option value="" disabled>Choose City</option>
-                            <option value="1" selected>Select Your City</option>
-                            <option value="2">Delhi</option>
-                            <option value="3">Mumbai</option>
-                            <option value="4">Indore</option>
-                        </select>
 
-                        </div>
-                        <div class="col text-left">
-                        <div class="py-2 custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Get updates on<i class="fab fa-whatsapp light-green-text mx-1"></i> WhatsApp</label>
-                        </div>
-                        </div>
+<!--Listing Your Property Form Container-->
+<div class="container mt-2" >
+	<!--Listing Property Card-->
+	<div class="card z-depth-1">
+	    <!-- Card content -->
+	 	<div class="card-body py-0" id="#Listnow">
+		    <!--Form Row-->
+		    <div class="row">
+		    	<!--Hotel Images Column-->
+		        <div class="col-lg-4 px-0 py-1 ">
+		            <div class="px-0">
+		            <img class="img-fluid formimage z-depth-1-half rounded" src="img/becomehotelimage.jpg" alt="Paperwork">
+		            </div>
+		        </div>
+		        <!--/.Hotel Images Column-->
+		        <!--Listing Property form Column-->
+		        <div class="col-lg-8">
+		            <div style="font-family: 'Times New Roman', Times, serif;" class="text-center py-4 h3 dark-grey-text">List Your Property Here For Free</div>
+		            <!--Default form list Your Property-->
+		            <form class="text-center p-2" method="POST" action="addpropertyform.html" enctype="multipart/form-data">
 
-                        <div class="col-12 py-2">
-                            <p class="text-grey ">Property Type</p>
-                            <hr class="w-header py-0">
-                            <center>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a style="color:grey" class="nav-link proptype active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                        aria-selected="true">Residential</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a  style="color:grey" class="nav-link proptype " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                        aria-selected="false">Commercial</a>
-                                </li>
-                            </ul>
-                            </center>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><!-- Default inline 1-->
-                                    <div class="py-3 px-auto">
-                                        <p class="font-weight-bold">Select Property Ad Type</p>
-                                        <hr class="w-header py-0">
-                                        
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline1">Rent</label>
-                                </div>
-                                
-                                <!-- Default inline 2-->
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline2">Resale</label>
-                                </div>
-                                
-                                <!-- Default inline 3-->
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline3">PG/Hostel</label>
-                                </div>
-                                 <!-- Default inline 3-->
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline33" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline33">Flatmates</label>
-                                </div>
-                            </div></div>
+		                <!--First Row First and Last name-->
+		                <div class="form-row mb-2">
+		                    <div class="col mb-3">
+		                        <!-- First name -->
+		                        <input type="text" name="firstname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+		                    </div>
+		                            
+		                    <div class="col">
+		                    <!-- Last name -->
+		                  		<input type="text" name="lastname" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+		                    </div>
+		                </div>
+		                <!--/.First Row First and Last name-->
 
-                                
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><!-- Default inline 1-->
-                                <div class="py-3 px-auto py-3">
-                                        <p class="font-weight-bold ">Select Property Ad Type</p>
-                                        <hr class="w-header py-0">
+		                <!--Second Row email and number-->
+		                <div class="form-row mb-1">
+		                    <!-- E-mail Address -->
+		                    <div class="col-sm-6 input-group mb-3">
+		                        <div class="input-group-prepend">
+		                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-at light-info-text"></i></span>
+		                        </div>
+		                        <input type="text" name="emailaddress" class="form-control" placeholder="Email address" aria-label="E-mail" aria-describedby="basic-addon1">
+		                   </div>
+		                      
+		    				<!-- Phone number -->
+		                    <div class="col-sm-6 input-group mb-3">
+		                        <div class="input-group-prepend">
+		                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone-alt light-info-text"></i></span>
+		                        </div>
+		                        <input type="text" name="phonenumber" id="defaultRegisterPhone" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+		                    </div>		                    
+		                </div>
+		                <!--/.Second Row email and number-->
 
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline21" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline21">Rent</label>
-                                </div>
-                                
-                                <!-- Default inline 2-->
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="defaultInline22" name="inlineDefaultRadiosExample">
-                                    <label class="custom-control-label" for="defaultInline22">Sale</label>
-                                </div>
-              </div>
-              
-                            </div>
-                        </div>
+		                    
+		                <!--third Row city-->
+		                <div class="form-row mb-2">
+		                    <!-- Cities select -->
+		                    <div class="col-12">
+		                        <select name="city" class="browser-default custom-select mb-4">
+		                            <option value="" disabled>Choose City</option>
+		                            <option value="1" selected>Select Your City</option>
+		                            <option value="2">Delhi</option>
+		                            <option value="3">Mumbai</option>
+		                            <option value="4">Indore</option>
+		                        </select>
+		                    </div>
+		                    <!-- Cities select -->
 
-                    </div>
-                    
-                        <!-- Sign up button -->
-                        <button class="btn btn-default btn-block" type="submit"><span class="btnsignup">Start Listing Property for Free</span></button>
+		                    <!-- get update on whatsapp checkbox -->
+		                    <div class="col text-left">
+		                        <div class="py-2 custom-control custom-checkbox">
+		                            <input type="checkbox" name="getupdateonwhatsapp" class="custom-control-input" id="getupdateonwhatsapp">
+		                            <label class="custom-control-label" for="getupdateonwhatsapp">Get updates on<i class="fab fa-whatsapp light-green-text mx-1"></i>WhatsApp</label>
+		                        </div>
+		                    </div>
+		                    <!--/.get update on whatsapp checkbox -->
 
-                
-                    </form>
-                    <!-- Default form register -->        
-                </div>
-     
-        </div>
-                                        <div class="mb-4 text-center">
-                                        <!-- Social register -->
-                                    
-                                        <p>Get in touch with social site</p>
-                                    
-                                        <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-                                        <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-                                        <a href="#" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i></a>
-                                        <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-                                    
-                                    </div>
-        </div>
-    
-    </div>
+		                    <!-- Property Type Nav tabs -->
+		                    <div class="col-12 py-2">
+		                        <p class="text-grey ">Property Type</p>
+		                        <hr class="w-header py-0">
+		                        <center>
 
+		                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+		                            <li class="nav-item">
+		                            <a style="color:grey" class="nav-link proptype active" id="Red-tab-tab" data-toggle="tab" href="#Residentialtab" role="tab" aria-controls="Residentialtab"
+		                            aria-selected="true">Residential</a>
+		                            </li>
+		                            <li class="nav-item">
+		                            <a  style="color:grey" class="nav-link proptype " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Commercial</a>
+		                            </li>
+		                        </ul>
+		                        </center>
+
+		                        <!--Tabs Content-->
+		                        <div class="tab-content" id="myTabContent">
+		                            <!--Residential Tab-content-->
+			                        <div class="tab-pane fade show active" id="Residentialtab" role="tabpanel" aria-labelledby="Red-tab">
+			                        	
+			                            <div class="py-3 px-auto">
+			                            <p class="font-weight-bold">Select Property Ad Type</p>
+			                            <hr class="w-header py-0">
+
+			                            <!-- Default inline 1-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+				                            <input type="radio" name="residential" class="custom-control-input" id="defaultInline1">
+				                            <label class="custom-control-label" for="defaultInline1">Rent</label>
+			                            </div>
+			                                
+			                            <!-- Default inline 2-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+			                                <input type="radio" name="residential" class="custom-control-input" id="defaultInline2">
+			                                <label class="custom-control-label" for="defaultInline2">Resale</label>
+			                            </div>
+			                                
+			                            <!-- Default inline 3-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+			                                <input type="radio" name="residential" class="custom-control-input" id="defaultInline3" >
+			                                <label class="custom-control-label" for="defaultInline3">PG/Hostel</label>
+			                            </div>
+			                            
+			                            <!-- Default inline 3-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+			                                <input type="radio" name="residential" class="custom-control-input" id="defaultInline4">
+			                                <label class="custom-control-label" for="defaultInline4">Flatmates</label>
+			                            </div>
+			                            
+			                            </div>
+			                        </div>
+		                            <!--/.Residential Tab-content-->
+
+		                            <!--Commercial Tab-content-->
+			                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			                       	
+			                        	<div class="py-3 px-auto py-3">
+			                            <p class="font-weight-bold ">Select Property Ad Type</p>
+			                            <hr class="w-header py-0">
+
+			                            <!-- Default inline 1-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+			                               	<input type="radio" class="custom-control-input" id="defaultInline21" name="Commercialtype">
+			                                 <label class="custom-control-label" for="defaultInline21">Rent</label>
+			                            </div>
+			                                
+			                            <!-- Default inline 2-->
+			                            <div class="custom-control custom-radio custom-control-inline">
+			                                <input type="radio" class="custom-control-input" id="defaultInline22" name="Commercialtype">
+			                                <label class="custom-control-label" for="defaultInline22">Sale</label>
+			                            </div>
+			                            </div>
+			                        </div>
+			                        <!--Commercial Tab-content-->
+		                        </div>
+		                        <!--/.Tabs Content-->
+		                    </div>
+		                    <!-- /. Property Type Nav tabs -->
+
+		                    <!-- start listing proerty button -->
+		                    <button role="submit" class="btn btn-default btn-block" type="submit"><span class="btnsignup">Start Listing Property for Free</span>
+		                    </button>
+		                </div>
+		            </form>
+		        <!--/.Listing Property form Column-->
+		        <div class="mb-4 text-center mx-auto">
+		        <!-- Social register -->
+		        <p>Get in touch with social site</p>
+		        <a href="https://www.facebook.com/sheltown.india" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i>
+		        </a>
+		        <a href="https://twitter.com/OwnShelt?s=20" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i>
+		        </a>
+		        <a href="https://instagram.com/sheltown.india" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i>
+		        </a>
+		        <a href="https://www.linkedin.com/company/sheltown" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i>
+		        </a>
+		        </div>
+		    <!--/.Default form list Your Property-->   
+		    </div>
+		    </div>
+		    <!--/.Form Row-->
+	    </div>
+		<!--/.Card content -->
+	</div>
+	<!--/.Listing Property Card-->
 </div>
-</div>
+<!--/.Listing Your Property Form Container-->
+
+
 <div class="container py-3">
     <div class=" callus theme-color text-center">
         <p class="p-2 mb-1 px-2 pb-0 font-weight-light"><i class="fa fa-phone-alt"></i>
@@ -346,17 +365,14 @@
 </div>
 
 
-
 <div class="container  py-4 ">
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 text-center dark-grey-text">
-
         <!-- Section heading -->
         <h4 class="font-weight-bold dark-grey-text mb-4 pt-3 my-2 pb-2">Why List Your Property With SheltOwn?</h4>
         <hr class="w-header">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
-
             <!--First column-->
             <div class="col-lg-3 p-2 col-md-6 hoverable">
                 <i class="fas fa-phone-slash fa-3x blue-text"></i>
@@ -396,17 +412,11 @@
                 <p class="text-muted">We respect everyone's privacy at fullest and we expect same from our property partner for our customers.</p>
             </div>
             <!--/Fourth column-->
-
         </div>
         <!--/Grid row-->
-
-
     </section>
     <!--Section: Content-->
 </div>
-
-
-
 
 
 <section class="container mt-2 mb-2">
@@ -414,19 +424,18 @@
     <div class="row">
         <div class="col-12 py-2 col-sm-12">
             <center>
-                <div style="font-family: Georgia, 'Times New Roman', serif;" class="h4"><b>Need More Information ? </b>
-                </div>
-                <div type="button" href="#" class="px-5 btn btn-lg btn-outline-dark btn-rounded"><span
-                        style="font-family: Georgia, 'Times New Roman', serif;">Contact US</span></div>
+            <div style="font-family: Georgia, 'Times New Roman', serif;" class="h4"><b>Need More Information ? </b>
+            </div>
+            <div type="button" href="#" class="px-5 btn btn-lg btn-outline-dark btn-rounded">
+            <span style="font-family: Georgia, 'Times New Roman', serif;">Contact US</span>
+            </div>
             </center>
         </div>
     </div>
-
 </section>
 
 </main>
 <!--Main Sections End here-->
-
 <!---Footer section will here-->    
 <!--Footer one -->
 <footer class="site-footer py-5 mt-1 ">
@@ -770,5 +779,4 @@
         </div>
 </section>
 </body>
-    
-    </html>
+</html>

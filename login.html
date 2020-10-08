@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>List Your Property - SheltOwn</title>
+    <!-- SheltOwn icon -->
+    <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/common.style.css">
+    <link rel="stylesheet" href="css/footer.style.css">
+
+    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/counter.jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"> </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+</head>
+<body>
+<!--Navbar -->
+<header class="sticky-top">
+    <nav style="box-shadow: none"class="navbar navbar-expand-lg theme-color navbar-light py-1 font-weight-bold ">
+        <a class=" navbar-brand" href="#">
+        <img src="https://sheltown.in/static/sheltownapp/img/logo.png" width="150" height="50" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+        <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="navbar-collapse" id="main_nav">
+	        <div class="offcanvas-header mt-3">
+	        	<button style="background: none; border:none;" class="btn-close float-right"><i class="fa fa-times"aria-hidden="true" style="font-size : 28px;"></i></button>
+	        </div>
+	        <!--Navbar Menu-->
+	        <ul class="navbar-nav ml-auto">
+	            <li class="nav-item">
+	                <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+	            </li>
+	        </ul>
+        </div>
+    </nav>
+</header>
+<!--/.Navbar -->
+<!-- End header-->
+<div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" 
+aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-warning" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Subscribe</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="form3" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form3">Your name</label>
+        </div>
+
+        <div class="md-form">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="form2" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form2">Your email</label>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fas fa-paper-plane-o ml-1"></i></a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#orangeModalSubscription">Launch
+    modal Subscription</a>
+</div>
+
+
+</body>
+</html>

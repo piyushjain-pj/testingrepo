@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list-your-property-for-rent-sale</title>
+    <title>Add New Property - SheltOwn</title>
     <!-- SheltOwn icon -->
     <link rel="icon" href="https://sheltown.in/static/sheltownapp/img/favicon.png" type="image/x-icon">
     <!-- Font Awesome -->
@@ -15,15 +15,14 @@
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="myaccount.css">
+    <link rel="stylesheet" href="css/common.style.css">
+    <link rel="stylesheet" href="css/footer.style.css">
+    <link rel="stylesheet" href="css/myaccount.style.css">
 
-    
     <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="counter.jquery.js"></script>
-    <script type="text/javascript" src="myaccount.js"></script>
-
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <script type="text/javascript" src="js/myaccount.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -31,18 +30,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript">
-        function hiddenDivitem() {
-            var x = document.getElementById("HiddenDiv");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-    <style>
-    </style>
 </head>
 <body>
     <!--Header -->
@@ -119,7 +106,7 @@
                             <div style="font-family: 'Times New Roman', Times, serif;"
                                 class="text-center py-4 h3 dark-grey-text">List Your Property Here For Free</div>
                             <!-- Default form register -->
-                            <form class="text-center p-2" method="POST" action="AddPropertyFormPage.html" enctype="multipart/form-data">
+                            <form class="text-center p-2" method="POST" action="addpropertyform.html" enctype="multipart/form-data">
                                 <div class="form-row mb-2">
                                     <div class="col-12">
                                         <!-- city -->
