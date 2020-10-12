@@ -193,12 +193,12 @@
 		                <div class="form-row mb-2">
 		                    <div class="col mb-3">
 		                        <!-- First name -->
-		                        <input type="text" name="firstname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+		                        <input type="text" name="firstname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
 		                    </div>
 		                            
 		                    <div class="col">
 		                    <!-- Last name -->
-		                  		<input type="text" name="lastname" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+		                  		<input type="text" name="lastname" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" required>
 		                    </div>
 		                </div>
 		                <!--/.First Row First and Last name-->
@@ -210,7 +210,7 @@
 		                        <div class="input-group-prepend">
 		                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-at light-info-text"></i></span>
 		                        </div>
-		                        <input type="text" name="emailaddress" class="form-control" placeholder="Email address" aria-label="E-mail" aria-describedby="basic-addon1">
+		                        <input type="text" name="emailaddress" class="form-control" placeholder="Email address" aria-label="E-mail" aria-describedby="basic-addon1" required>
 		                   </div>
 		                      
 		    				<!-- Phone number -->
@@ -218,7 +218,7 @@
 		                        <div class="input-group-prepend">
 		                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone-alt light-info-text"></i></span>
 		                        </div>
-		                        <input type="text" name="phonenumber" id="defaultRegisterPhone" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+		                        <input type="text" name="phonenumber" id="defaultRegisterPhone" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
 		                    </div>		                    
 		                </div>
 		                <!--/.Second Row email and number-->
@@ -228,7 +228,7 @@
 		                <div class="form-row mb-2">
 		                    <!-- Cities select -->
 		                    <div class="col-12">
-		                        <select name="city" class="browser-default custom-select mb-4">
+		                        <select name="city" class="browser-default custom-select mb-4" required>
 		                            <option value="" disabled>Choose City</option>
 		                            <option value="1" selected>Select Your City</option>
 		                            <option value="2">Delhi</option>
