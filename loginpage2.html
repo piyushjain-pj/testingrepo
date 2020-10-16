@@ -28,6 +28,21 @@
     <!-- Your custom scripts (optional) -->  
 
     <style>
+
+
+body {
+  /* The image used */
+  background-image: url("0.jpg");
+
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
         @media(max-width: 500px){
         .login-page-div1{
             border: 1px solid white;
@@ -38,12 +53,16 @@
             background-color: aliceblue;
             box-shadow: none!important;
         }
+        .hideinm{
+          font-size:50px
+        }
        }
        @media(min-width: 1000px){
         .login-page-div1{
             border: 1px solid white;
             border-radius: 5%;
             width: 45%;
+            opacity: 1.1;
             margin: 2% 0;
             padding: 5% 6%;
             background-color: aliceblue;
@@ -59,15 +78,16 @@
 
     </style>
 </head>
-<body  style="background: linear-gradient(to top right, #99ffcc 10%, #33ccff 94%); height: 100%;">
+<body>
 <!--Header-->
 <!--Navbar -->
 <!--/.Navbar -->
 <!-- End Header-->
 <main>
+<div class="bg-image"></div>
 <!--Login Section-->
-<section class="display-4 py-3 text-center">Welcome to SheltOwn</section>
-<section class="container" ">
+<section class="display-3 hideinm py-3 text-center font-weight-bold white-text " style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 5px -2px 15px gray;">Welcome to SheltOwn</section>
+<section class="container bg-text">
   <div class="card login-page-div1 mx-lg-auto">
       <div class="text-center">
         <p class="w-100 font-weight-bold" style="font-size: 35px; font-family: Georgia;color: #4b4848;">Login In</p>
@@ -101,10 +121,9 @@
             <a class="text-warning font-weight-bold" href="signup.html">Sign Up</a>
         </p>
   </div>
-
-  </div>
 </section>
 <!--/.Login Section-->
+</div>
 </main>
 
 

@@ -12,24 +12,70 @@
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/common.style.css">
-    <link rel="stylesheet" href="css/footer.style.css">
+    <link rel="stylesheet" href="static/css/common.style.css">
+    <link rel="stylesheet" href="static/css/footer.style.css">
 
-    <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/counter.jquery.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/sidebar.js"> </script>
+    <script type="text/javascript" src="static/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/counter.jquery.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
+    <script type="text/javascript" src="static/js/sidebar.js"> </script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
+
+
+    <style rel="stylesheet">
+            .signup-form
+            {
+
+            display: none;
+        }
+
+        .service-link{
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 2%;
+        }
+
+     .digit-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+   
+.digit-group input {
+		width: 40px;
+		height: 30px;
+		border: 1px solid gray!important;
+        border-radius: 1px;
+		line-height: 50px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		margin: 0 2px;
+	}
+
+.digit-group .splitter {
+		padding: 0 5px;
+		color: gray;
+		font-size: 24px;
+	}
+
+.prompt {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: black;
+}
+</style>
+
 </head>
 <body>
 <!--Navbar -->
@@ -48,19 +94,19 @@
 	        <!--Navbar Menu-->
 	        <ul class="navbar-nav ml-auto">
 	            <li class="nav-item">
-	                <a class="nav-link"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
+	                <a class="nav-link" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-user-plus"></i><b>&nbsp;Sign up</b></a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
+	                <a class="nav-link" href="loginpage2.html"><i class="fas fa-user-circle"></i><b>&nbsp;&nbsp;Log in</b></a>
 	            </li>
 	        </ul>
         </div>
     </nav>
 </header>
+
 <!--/.Navbar -->
 <!-- End header-->
 <!--Main Sections start here-->
-<main role="main" >
 <!--Carousel Wrapper-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -69,7 +115,7 @@
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item mb-5 active">
-        <img src="img/becomecarousel1.png"alt="text">
+        <img src="static/img/becomecarousel1.png"alt="text">
         <div class="container">
         <div class="carousel-caption text-left ">
         <p class="h1 carousel-item-text font-weight-bold">List Your Property</p>
@@ -84,7 +130,7 @@
         </div>
     </div>
         <div class="carousel-item mb-5">
-            <img src="img/becomecarousel..2.png" alt="">
+            <img src="static/img/becomecarousel..2.png" alt="">
             <div class="container ">
             <div class="carousel-caption text-left">
             <p class="h1 carousel-item-text font-weight-bold">List Your Property</p>
@@ -179,7 +225,7 @@
 		    	<!--Hotel Images Column-->
 		        <div class="col-lg-4 px-0 py-1 ">
 		            <div class="px-0">
-		            <img class="img-fluid formimage z-depth-1-half rounded" src="img/becomehotelimage.jpg" alt="Paperwork">
+		            <img class="img-fluid formimage z-depth-1-half rounded" src="static/img/becomehotelimage.jpg" alt="Paperwork">
 		            </div>
 		        </div>
 		        <!--/.Hotel Images Column-->
@@ -434,7 +480,207 @@
     </div>
 </section>
 
-</main>
+
+
+
+
+
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-light text-center bg-default">
+        <h5 class="modal-title w-100 ">Create Your Account</h5>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;">
+          <span aria-hidden="true"><i class="fa fa-times white-text"></i></span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+
+
+
+
+
+
+
+
+        <div class="signup-form" >
+        <form>
+        <div class="justify-content-center">
+        <div><p class="h6 mb-4 grey-dark">Signup As:</p></div>
+        <!-- Material inline 1 -->
+        <div class="form-check form-check-inline">
+            <input type="radio" name="user_type" class="form-check-input" value="Property Owner" id="materialInline1" >
+            <label class="form-check-label font-weight-bold grey-text" for="materialInline1">Provider</label>
+        </div>
+        
+        <!-- Material inline 2 -->
+        <div class="form-check form-check-inline">
+            <input type="radio" name="user_type" class="form-check-input" value="User" id="materialInline2" >
+            <label class="form-check-label font-weight-bold grey-text" for="materialInline2">User</label>
+        </div>
+
+        </div>
+        <br>
+        <div class="mb-3">
+        <label for="id_phone_number" class="text-dark h6"><strong>Phone Number:<strong></label>
+        <div class=" z-depth-1 input-group flex-nowrap"> 
+            <div class="input-group-prepend">
+            <span class="input-group-text bg-white"id="addon-wrapping">+91</span>
+            </div>
+            <input type="text" name="phone_number" pattern="[6-9]{1}[0-9]{9}" maxlength="10"  minlength="10" title="Please enter a valid phone number, of exactly 10 digits allowed and and starting digit can be only 6,7,8,9." class="form-control" id="id_phone_number" aria-describedby="addon-wrapping" placeholder="Enter 10 Digit Phone Number:" >
+        </div>
+        <small>Your information is safe with us</small>
+        </div>
+        
+        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="/Policy/">Terms and Conditions</a>
+        <br>
+        <div class="d-flex justify-content-center">
+            <button onclick="getTab(1)" class="btn btn-unique">SEND OTP</button>
+        </div>
+        <!-- data-dismiss="modal" -->
+        <center>
+        <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
+        <center>
+        </form>
+        </div>
+
+
+
+        <div class="signup-form">
+        <form action="" post="post" enctype="multipart/form-data" >
+            <div class="mb-3">
+                <label for="id_phone_number" class="text-dark h6"><strong>Verify Your Phone Number<strong>
+                </label>
+                <div class=" z-depth-1 input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">+91</span>
+                    </div>
+        
+                                    <input type="text" value="7000882662" name="phone_number" pattern="[6-9]{1}[0-9]{9}" maxlength="10" minlength="10"
+                                        title="Please enter a valid phone number, of exactly 10 digits allowed and and starting digit can be only 6,7,8,9."
+                                        class="form-control" id="id_phone_number" aria-describedby="addon-wrapping"
+                                        placeholder="Enter 10 Digit Phone Number:" readonly>
+        
+                    <div class="input-group-prepend">
+                        <button class="input-group-text btn-sm my-0 py-0 btn-grey" id="addon-wrapping"><i class="fa fa-pen"></i></button>
+                    </div>
+                </div>
+                <small class="text-success">Your information is safe with us</small>
+            </div>
+        
+            <center>
+                <small class="text-secondary">We have sent an One Time Password to<span class="font-weight-bold"> +91
+                        7000-882-662 </span>Please Enter OTP To Verify Your Phone Number! <a class="text-info font-weight-bold"
+                        href="">RESEND OTP</a>
+                </small>
+            </center>
+            <div class="digit-group justify-content-center my-2">
+                <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" />
+                <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3"
+                    data-previous="digit-1" />
+                <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4"
+                    data-previous="digit-2" />
+                <span class="splitter">&ndash;</span>
+                <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5"
+                    data-previous="digit-3" />
+                <input type="text" class="form-control" id="digit-5" name="digit-5" data-next="digit-6"
+                    data-previous="digit-4" />
+                <input type="text" class="form-control" id="digit-6" name="digit-6" data-previous="digit-5" />
+            </div>
+        
+            <div class="d-flex justify-content-center my-2">
+                <button onclick="getTab(2)" class="btn btn-unique" >Verify OTP</button>
+            </div>
+            <!-- data-dismiss="modal" -->
+            <center>
+                <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
+                <center>
+        </form>
+        </div>
+
+        <div class="signup-form">
+        <form >
+                        
+                            <p class="h4">Complete Your Profile</p>
+                            <hr>
+                        
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- First name -->
+                                    <label for="defaultRegisterPhoneusername" class="font-weight-bold"> First Name*</label>
+                                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <label for="defaultRegisterPhoneusername" class="font-weight-bold">Last Name*</label>
+                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="mb-4">
+                                <!-- User Name -->
+                                <label for="defaultRegisterPhoneusername" class="font-weight-bold">Username*</label>
+                                <input type="text" value="+91 7000-882-662" id="defaultRegisterPhoneusername" class="form-control" readonly>
+                            </div>
+                        
+                            <!-- E-mail -->
+                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Email Address*</label>
+                            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        
+                            <!-- Password -->
+                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Password*</label>
+                            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Enter Password"
+                                aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                At least 8 characters and 1 digit
+                            </small>
+                        
+                            <!--Confirm Password -->
+                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Confirm Password*</label>
+                            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Confirm Password">
+                        
+                        
+                            <!-- Sign up button -->
+                        
+                            <hr>
+                            <!-- Default form register -->
+                            <input required type="checkbox"> By continuing, you agree to our <a href="/Policy/">Terms and Conditions</a>
+                            <br>
+                            <button class="btn btn-info my-4 btn-block" >Submit</button>
+                        
+        </form>
+        </div>
+
+
+
+
+        </div>
+        <div class="modal-footer">
+            <div class="bg-default service-link">
+                <div class="row " style="margin: 0 auto;">
+                  <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
+                  <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
+                  <div class="col-sm-12"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <!--Main Sections End here-->
 <!---Footer section will here-->    
 <!--Footer one -->
@@ -778,5 +1024,87 @@
             </div>
         </div>
 </section>
+
+<script type="text/javascript">
+    var currentform = 2
+    showTab(currentform)
+
+    function showTab(n) {
+        console.log(n);
+        // This function will display the specified tab of the form ...
+        var x = document.getElementsByClassName("signup-form");
+        console.log(x);
+        x[n].style.display = "block";
+        // ... and fix the Previous/Next buttons:
+    }
+
+    function getTab(n) {
+        var x = document.getElementsByClassName("signup-form");
+        if (n == 0) {
+            currentform = n
+            x[1].style.display = "none"
+            x[2].style.display = "none"
+            showTab(currentform)
+        }
+        else if (n == 1) {
+            if (n == 1)
+            currentform = n
+            x[0].style.display = "none"
+            x[2].style.display = "none"
+            showTab(currentform)
+
+        }
+        else if (n == 2) {
+            currentform = n
+            if (n == 2)
+            x[0].style.display = "none"
+            x[1].style.display = "none"
+            showTab(currentform)
+        }
+
+    }
+</script>
+
+
+    <script type="text/javascript">
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+        $('.digit-group').find('input').each(function () 
+        {
+                $(this).attr('maxlength', 1);
+                $(this).on('keyup', function (e) {
+                    var parent = $($(this).parent());
+
+                    if (e.keyCode === 8 || e.keyCode === 37) 
+                    {
+                        var prev = parent.find('input#' + $(this).data('previous'));
+                        console.log(e.keyCode);
+                        if (prev.length) {
+                            $(prev).select();
+                        }
+                    } 
+                    else if ((e.keyCode >= 48 && e.keyCode <= 57) || e.keyCode === 39) 
+                    {   console.log(e.keyCode);
+                        var next = parent.find('input#' + $(this).data('next'));
+
+                        if (next.length) {
+                            $(next).select();
+                        } 
+  
+                    }
+                });
+            });
+
+
+
+    </script>
 </body>
 </html>
