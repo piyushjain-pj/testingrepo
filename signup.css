@@ -1,0 +1,125 @@
+.signup-form
+            {
+            display: none;
+            }
+.service-link{
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 2%;
+        }
+.digit-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+.digit-group input {
+		width: 40px;
+		height: 30px;
+		border: 1px solid gray!important;
+        border-radius: 1px;
+        background-color: #e9e5e5a7;
+		line-height: 50px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		margin: 0 2px;
+	}
+
+.digit-group .splitter {
+		padding: 0 5px;
+		color: gray;
+		font-size: 24px;
+	}
+
+.field-icon {
+        float: right;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: relative;
+        z-index: 2;
+        right:8px;
+        }
+
+.prompt {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: black;
+}
+
+
+label {
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    .card-input {
+    margin: 10px 0 0 0;
+    padding: 00px;
+}
+.radio-cust{
+  font-weight: 300;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.card-input-element {
+  position: absolute;
+  position: absolute;
+    top: 24px;
+    left: 38px;
+    background-color: bisque!important;
+    opacity: 0;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+     border: 3px solid green;
+ }
+ .panel {
+     background-color: #2acad6cc;
+     border: 1px solid #2acad6cc;
+     padding: 5px;
+     border-radius: 50px;
+
+ }
+
+}
+@media(min-width: 1000px){
+
+.card-input-element {
+  position: absolute;
+  position: absolute;
+    top: 24px;
+    left: 38px;
+    background-color: bisque!important;
+    opacity: 0;
+}
+.radio-cust{
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card-input {
+    margin: 10px;
+    padding: 00px;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+     border: 3px solid green;
+ }
+ .panel {
+     background-color: #2acad6cc;
+     border: 1px solid #2acad6cc;
+     padding: 5px;
+     border-radius: 50px;
+
+ }
+}

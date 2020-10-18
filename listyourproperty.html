@@ -486,200 +486,6 @@
 
 
 
-<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-light text-center bg-default">
-        <h5 class="modal-title w-100 ">Create Your Account</h5>
-        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;">
-          <span aria-hidden="true"><i class="fa fa-times white-text"></i></span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-
-
-
-
-
-
-
-
-        <div class="signup-form" >
-        <form>
-        <div class="justify-content-center">
-        <div><p class="h6 mb-4 grey-dark">Signup As:</p></div>
-        <!-- Material inline 1 -->
-        <div class="form-check form-check-inline">
-            <input type="radio" name="user_type" class="form-check-input" value="Property Owner" id="materialInline1" >
-            <label class="form-check-label font-weight-bold grey-text" for="materialInline1">Property Owner</label>
-        </div>
-        
-        <!-- Material inline 2 -->
-        <div class="form-check form-check-inline">
-            <input type="radio" name="user_type" class="form-check-input" value="User" id="materialInline2" >
-            <label class="form-check-label font-weight-bold grey-text" for="materialInline2">User</label>
-        </div>
-
-        </div>
-        <br>
-        <div class="mb-3">
-        <label for="id_phone_number" class="text-dark h6"><strong>Phone Number:<strong></label>
-        <div class=" z-depth-1 input-group flex-nowrap"> 
-            <div class="input-group-prepend">
-            <span class="input-group-text bg-white"id="addon-wrapping">+91</span>
-            </div>
-            <input type="text" name="phone_number" pattern="[6-9]{1}[0-9]{9}" maxlength="10"  minlength="10" title="Please enter a valid phone number, of exactly 10 digits allowed and and starting digit can be only 6,7,8,9." class="form-control" id="id_phone_number" aria-describedby="addon-wrapping" placeholder="Enter 10 Digit Phone Number:" >
-        </div>
-        <small>Your information is safe with us</small>
-        </div>
-        
-        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="/Policy/">Terms and Conditions</a>
-        <br>
-        <div class="d-flex justify-content-center">
-            <button onclick="getTab(1)" class="btn btn-unique">SEND OTP</button>
-        </div>
-        <!-- data-dismiss="modal" -->
-        <center>
-        <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
-        <center>
-        </form>
-        </div>
-
-
-
-        <div class="signup-form">
-        
-            <div class="mb-3">
-                <label for="id_phone_number" class="text-dark h6"><strong>Verify Your Phone Number<strong>
-                </label>
-                <div class=" z-depth-1 input-group flex-nowrap">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="addon-wrapping">+91</span>
-                    </div>
-        
-                                    <input type="text" value="7000882662" name="phone_number" pattern="[6-9]{1}[0-9]{9}" maxlength="10" minlength="10"
-                                        title="Please enter a valid phone number, of exactly 10 digits allowed and and starting digit can be only 6,7,8,9."
-                                        class="form-control" id="id_phone_number" aria-describedby="addon-wrapping"
-                                        placeholder="Enter 10 Digit Phone Number:" readonly>
-        
-                    <div class="input-group-prepend">
-                        <button class="input-group-text btn-sm my-0 py-0 btn-grey" id="addon-wrapping"><i class="fa fa-pen"></i></button>
-                    </div>
-                </div>
-                <small class="text-success">Your information is safe with us</small>
-            </div>
-        
-            <center>
-                <small class="text-secondary">We have sent an One Time Password to<span class="font-weight-bold"> +91 7000-882-662 </span>Please Enter OTP To Verify Your Phone Number! <a class="text-info font-weight-bold"
-                        href="">RESEND OTP</a>
-                </small>
-            </center>
-            <div class="digit-group justify-content-center my-2">
-                <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" />
-                <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3"
-                    data-previous="digit-1" />
-                <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4"
-                    data-previous="digit-2" />
-                <span class="splitter">&ndash;</span>
-                <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5"
-                    data-previous="digit-3" />
-                <input type="text" class="form-control" id="digit-5" name="digit-5" data-next="digit-6"
-                    data-previous="digit-4" />
-                <input type="text" class="form-control" id="digit-6" name="digit-6" data-previous="digit-5" />
-            </div>
-        
-            <div class="d-flex justify-content-center my-2">
-                <button onclick="getTab(2)" class="btn btn-unique" >Verify OTP</button>
-            </div>
-            <!-- data-dismiss="modal" -->
-            <center>
-                <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
-                <center>
-        
-        </div>
-
-        <div class="signup-form">
-        <form >
-                        
-                            <p class="h4">Complete Your Profile</p>
-                            <hr>
-                        
-                            <div class="form-row mb-4">
-                                <div class="col">
-                                    <!-- First name -->
-                                    <label for="defaultRegisterPhoneusername" class="font-weight-bold"> First Name*</label>
-                                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
-                                </div>
-                                <div class="col">
-                                    <!-- Last name -->
-                                    <label for="defaultRegisterPhoneusername" class="font-weight-bold">Last Name*</label>
-                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
-                                </div>
-                            </div>
-                        
-                        
-                            <div class="mb-4">
-                                <!-- User Name -->
-                                <label for="defaultRegisterPhoneusername" class="font-weight-bold">Username*</label>
-                                <input type="text" value="+91 7000-882-662" id="defaultRegisterPhoneusername" class="form-control" readonly>
-                            </div>
-                        
-                            <!-- E-mail -->
-                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Email Address*</label>
-                            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-                        
-                            <!-- Password -->
-                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Password*</label>
-                            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Enter Password"
-                                aria-describedby="defaultRegisterFormPasswordHelpBlock">
-                            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                                At least 8 characters and 1 digit
-                            </small>
-                        
-                            <!--Confirm Password -->
-                            <label for="defaultRegisterPhoneusername" class="font-weight-bold">Confirm Password*</label>
-                            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Confirm Password">
-                        
-                        
-                            <!-- Sign up button -->
-                        
-                            <hr>
-                            <!-- Default form register -->
-                            <input required type="checkbox"> By continuing, you agree to our <a href="/Policy/">Terms and Conditions</a>
-                            <br>
-                            <button class="btn btn-info my-4 btn-block" >Submit</button>
-                        
-        </form>
-        </div>
-
-
-
-
-        </div>
-        <div class="modal-footer">
-            <div class="bg-default service-link">
-                <div class="row " style="margin: 0 auto;">
-                  <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
-                  <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
-                  <div class="col-sm-12"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-
-
 <!--Main Sections End here-->
 <!---Footer section will here-->    
 <!--Footer one -->
@@ -1024,7 +830,312 @@
         </div>
 </section>
 
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 600px!important;">
+        <div class="modal-content">
+            <div class="modal-header text-light text-center bg-default">
+                <h5 class="modal-title w-100 ">Create Your Account</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;">
+                    <span aria-hidden="true"><i class="fa fa-times white-text"></i></span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+
+
+
+                <div class="signup-form " id="sendotpform">
+                    <form name="sendotpform" onsubmit="getTab(1)">
+                        <div class="justify-content-center">
+                            <div>
+                                <p class="h6 mb-4 grey-dark">Signup As:</p>
+                            </div>
+                            <!-- Material inline 1 -->
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="user_type" class="form-check-input" value="Property Owner"
+                                    id="materialInline1">
+                                <label class="form-check-label font-weight-bold grey-text"
+                                    for="materialInline1">Property Owner</label>
+                            </div>
+
+                            <!-- Material inline 2 -->
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="user_type" class="form-check-input" value="User"
+                                    id="materialInline2">
+                                <label class="form-check-label font-weight-bold grey-text"
+                                    for="materialInline2">User</label>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="id_phone_number" class="text-dark h6"><strong>Phone Number:<strong></label>
+                            <div class=" z-depth-1 input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white" id="addon-wrapping">+91</span>
+                                </div>
+                                <input type="text" name="phone_number" pattern="[6-9]{1}[0-9]{9}" maxlength="10"
+                                    minlength="10"
+                                    title="Please enter a valid phone number, of exactly 10 digits allowed and and starting digit can be only 6,7,8,9."
+                                    class="form-control" id="id_phone_number" aria-describedby="addon-wrapping"
+                                    placeholder="Enter 10 Digit Phone Number:">
+                            </div>
+                            <small>Your information is safe with us</small>
+                        </div>
+
+                        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="/Policy/">Terms
+                            and Conditions</a>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-success">SEND OTP</button>
+                        </div>
+                        <!-- data-dismiss="modal" -->
+                        <center>
+                            <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
+                            <center>
+                    </form>
+                </div>
+
+
+
+                <div class="signup-form">
+                    <div class="mb-3">
+                        <label for="id_phone_number" class="text-dark h6"><strong>Verify Your Phone Number<strong>
+                        </label>
+                        <div class=" z-depth-1 input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping">+91</span>
+                            </div>
+
+                            <input type="text" value="7000882662" name="phone_number" class="form-control"
+                                id="id_phone_number" readonly>
+
+                            <div class="input-group-prepend">
+                                <button class="input-group-text btn-sm my-0 py-0 btn-grey" id="addon-wrapping"><i
+                                        class="fa fa-pen"></i></button>
+                            </div>
+                        </div>
+                        <small class="text-success">Your information is safe with us</small>
+                    </div>
+
+                    <center>
+                        <small class="text-secondary">We have sent an One Time Password to<span
+                                class="font-weight-bold"> +91 7000-882-662 </span>Please Enter OTP To Verify Your Phone
+                            Number! <a class="text-info font-weight-bold" href="">RESEND OTP</a>
+                        </small>
+                    </center>
+
+
+                    <div class="digit-group justify-content-center my-2">
+                        <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" />
+                        <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3"
+                            data-previous="digit-1" />
+                        <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4"
+                            data-previous="digit-2" />
+                        <span class="splitter">&ndash;</span>
+                        <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5"
+                            data-previous="digit-3" />
+                        <input type="text" class="form-control" id="digit-5" name="digit-5" data-next="digit-6"
+                            data-previous="digit-4" />
+                        <input type="text" class="form-control" id="digit-6" name="digit-6" data-previous="digit-5" />
+                    </div>
+
+                    <div class="d-flex justify-content-center my-2">
+                        <button onclick="getTab(2)" type="submit" class="btn btn-unique">Verify OTP</button>
+                    </div>
+                    <!-- data-dismiss="modal" -->
+                    <center>
+                        <small>Already have an account? <a href="loginpage2.html">Log In now</a></small>
+                        <center>
+                </div>
+
+                <div class="signup-form" id="complete_from">
+                    <form>
+                        <h4 class="heading mb-4 pb-1">Complete Your Profile</h4> <label class="text-danger mb-3">*
+                            Required</label>
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <label for="fname" class="font-weight-bold"> First Name*</label>
+                                <input type="text" onblur="validate2(1)" id="fname" class="form-control"
+                                    placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <label for="lname" class="font-weight-bold">Last Name*</label>
+                                <input type="text" id="lname" onblur="validate2(2)" class="form-control"
+                                    placeholder="Last name">
+                            </div>
+                        </div>
+
+
+
+                        <!-- User Name -->
+                        <div class="mb-4">
+                            <label for="username" class="font-weight-bold">Username*</label>
+                            <input type="text" value="+91 7000-882-662" id="username" class="form-control" readonly>
+                        </div>
+
+                        <!-- E-mail -->
+                        <label for="email" class="font-weight-bold">Email Address*</label>
+                        <input type="email" onblur="validate2(3)" id="email" class="form-control mb-4"
+                            placeholder="E-mail">
+
+                        <!-- Password -->
+                        <label for="password" class="font-weight-bold">Password*</label>
+                        <input type="password" id="password" onblur="validate2(4)" class="form-control"
+                            placeholder="Enter Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            At least 8 characters and 1 digit
+                        </small>
+
+                        <!--Confirm Password -->
+                        <label for="cpassword" class="font-weight-bold">Confirm Password*</label>
+                        <input type="password" onblur="validate2(5)" id="cpassword" class="form-control"
+                            placeholder="Confirm Password">
+
+
+                        <!-- Sign up button -->
+
+                        <hr>
+                        <!-- Default form register -->
+                        <input required type="checkbox"> By continuing, you agree to our <a href="/Policy/">Terms and
+                            Conditions</a>
+                        <br>
+                        <button class="btn btn-info my-4 btn-block">Submit</button>
+
+                    </form>
+                </div>
+
+                <div class="signup-form pt-0">
+                    <h4 class="heading mb-4 pb-1">Confirmation</h4>
+                    <div class="row justify-content-start px-3">
+                        <p>Form has been submitted Successfully ! <br>You will recieve estimation on your email id and
+                            contact no.</p>
+                    </div>
+                    <div class="row justify-content-center"> <img src="https://i.imgur.com/krsWHvd.gif" class="check">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <div class="bg-default service-link">
+                    <div class="row " style="margin: 0 auto;">
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
+                        <div class="col-sm-12"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript">
+
+    function validateFormOTP() {
+            var x = document.forms["sendotpform"]["user_type"].value;
+            var y =document.forms["sendotpform"]["phone_number"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+
+    function validate2(val) {
+            v1 = document.getElementById("fname");
+            v2 = document.getElementById("lname");
+            v3 = document.getElementById("email");
+            v4 = document.getElementById("password");
+            v5 = document.getElementById("cpassword");
+
+
+            flag1 = true;
+            flag2 = true;
+            flag3 = true;
+            flag4 = true;
+            flag5 = true;
+
+            if (val >= 1 || val == 0) {
+                if (v1.value == "") {
+                    v1.style.borderColor = "red";
+                    flag1 = false;
+                }
+                else {
+                    v1.style.borderColor = "green";
+                    flag1 = true;
+                }
+            }
+
+            if (val >= 2 || val == 0) {
+                if (v2.value == "") {
+                    v2.style.borderColor = "red";
+                    flag2 = false;
+                }
+                else {
+                    v2.style.borderColor = "green";
+                    flag2 = true;
+                }
+            }
+
+            if (val >= 3 || val == 0) {
+                if (v3.value == "") {
+                    v3.style.borderColor = "red";
+                    flag3 = false;
+                }
+                else {
+                    v3.style.borderColor = "green";
+                    flag3 = true;
+                }
+            }
+
+            if (val >= 4 || val == 0) {
+                if (v4.value == "") {
+                    v4.style.borderColor = "red";
+                    flag4 = false;
+                }
+                else {
+                    v4.style.borderColor = "green";
+                    flag4 = true;
+                }
+            }
+            if (val >= 5 || val == 0) {
+                if (v5.value == "") {
+                    v5.style.borderColor = "red";
+                    flag5 = false;
+                }
+                else {
+                    v5.style.borderColor = "green";
+                    flag5 = true;
+                }
+            }
+
+            flag = flag3 && flag4 && flag5 && flag6 && flag7;
+
+            return flag;
+        }
+
     var currentform = 0
     showTab(currentform)
 
@@ -1064,8 +1175,12 @@
     }
 </script>
 
+<script type="text/javascript">
 
-    <script type="text/javascript">
+    $(function () {
+        $(".sendotpform").validate();
+    });
+        //Show and Hide  
         $(".toggle-password").click(function () {
 
             $(this).toggleClass("fa-eye fa-eye-slash");
@@ -1076,6 +1191,7 @@
                 input.attr("type", "password");
             }
         });
+        //Digit Group for six number OTP 
         $('.digit-group').find('input').each(function () 
         {
                 $(this).attr('maxlength', 1);
@@ -1097,7 +1213,6 @@
                         if (next.length) {
                             $(next).select();
                         } 
-  
                     }
                 });
             });
