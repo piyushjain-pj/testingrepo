@@ -186,17 +186,17 @@
 
                 <!--Six Digit Input Box field for OTP-->
                 <div class="digit-group justify-content-center my-2">
-                    <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" />
-                    <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-                    <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                    <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" required/>
+                    <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" required />
+                    <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" required />
                     <span class="splitter">&ndash;</span>
-                    <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
-                    <input type="text" class="form-control" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
-                    <input type="text" class="form-control" id="digit-6" name="digit-6" data-previous="digit-5" />
+                    <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" required />
+                    <input type="text" class="form-control" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4"  required/>
+                    <input type="text" class="form-control" id="digit-6" name="digit-6" data-previous="digit-5" required />
                 </div>
                 <!--/.Six Digit Input Box field for OTP-->
 
-
+                <div id="topreturn"></div>
                 <div class="d-flex justify-content-center my-2">
                 <button type="submit" class="btn btn-success btn-block btn-sm">Verify OTP</button>
                 </div>
@@ -395,7 +395,7 @@
             }
         }
 
-        flag = flag3 && flag4 && flag5 && flag6 && flag7;
+        flag = flag1 && flag2 && flag3 && flag4 && flag5;
 
         return flag;
     }
@@ -459,7 +459,7 @@
                 }
 
                 if (!timerOn) {
-                    // Do validate stuff here
+                    //do during timing stuff here
                     return;
                 }
 
@@ -508,7 +508,7 @@
             var url = form.attr('action');
 
             $.ajax({
-                type: "POST",
+                
                 url: url,
                 data: form.serialize(), // serializes the form's elements.
                 success: function (data) {
@@ -526,7 +526,7 @@
         var url = form.attr('action');
 
         $.ajax({
-            type: "POST",
+            
             url: url,
             data: form.serialize(), // serializes the form's elements.
             success: function (data) {
@@ -544,7 +544,7 @@
         var url = form.attr('action');
 
         $.ajax({
-            type: "POST",
+            
             url: url,
             data: form.serialize(), // serializes the form's elements.
             success: function (data) {
@@ -555,7 +555,6 @@
 </script>
 
 <!--all common scripts-->
-
 <script type="text/javascript">
 
 
