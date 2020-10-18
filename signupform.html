@@ -417,6 +417,11 @@
 
 <!--Script for Providing Steps in Modal sign form-->
 <script type="text/javascript">
+    //to get always top scroll
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
     //initialize currentform with 0
     var currentform = 0
@@ -424,7 +429,7 @@
 
     //Function showing new form next step
     function showTab(n) {
-        console.log(n);
+        topFunction()
         prevtTap = n
         // This function will display the specified tab of the form ...
         var x = document.getElementsByClassName("signup-form");
