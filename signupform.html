@@ -320,14 +320,7 @@
 
 <!--for Form Validtion-->
 <script type="text/javascript">
-    function validateFormOTP() {
-        var x = document.forms["sendotpform"]["user_type"].value;
-        var y = document.forms["sendotpform"]["phone_number"].value;
-        if (x == "") {
-            alert("Name must be filled out");
-            return false;
-        }
-    }
+
     function validate2(val) {
         v1 = document.getElementById("fname");
         v2 = document.getElementById("lname");
@@ -464,7 +457,7 @@
                 }
 
                 // Do timeout stuff here
-                alert('Timeout for otp');
+                //alert('Timeout for otp');
             }
 
 
