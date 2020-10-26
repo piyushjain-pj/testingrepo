@@ -104,7 +104,6 @@ function getTab(n) {
         showTab(currentTab)
     }
     else if (n==1){
-        if (n == 1 && !validateForm()) return false;
         currentTab = n
         x[0].style.display = "none"
         x[2].style.display = "none"
@@ -116,7 +115,6 @@ function getTab(n) {
     }
     else if (n==2){
       currentTab = n
-      if (n == 2 && !validateForm()) return false;
         x[1].style.display = "none"
         x[0].style.display = "none"
         x[3].style.display = "none"
@@ -127,7 +125,6 @@ function getTab(n) {
     }
     else if (n==3){
       currentTab = n
-      if (n == 3 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[0].style.display = "none"
@@ -138,7 +135,6 @@ function getTab(n) {
     }
     else if(n==4){
       currentTab = n
-      if (n == 4 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
@@ -149,7 +145,6 @@ function getTab(n) {
     }
     else if(n==5){
       currentTab = n
-      if (n == 5 && !validateForm()) return false;
         x[1].style.display = "none"
         x[2].style.display = "none"
         x[3].style.display = "none"
