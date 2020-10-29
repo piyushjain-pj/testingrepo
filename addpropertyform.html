@@ -165,13 +165,15 @@
     <div class="tab" id="propertydetailsTap">
                 <!-- Heading -->
                 <div class="py-3 px-4 font-weight-bold text-default">
-                    <p class="form-head-text">Property details </p>
+                    <p class="form-head-text">Property details</p>
                 </div>
                 <hr class="w-100 py-2 p-0 m-0">
                 <div class="row mx-2">
                     <div class="col-lg-6">
+
+
                         <!--Blue select-->
-                        <label class="mdb-main-label">Apartment Type*</label>
+                        <label >Apartment Type*</label>
                         <select name="apartmenttype" class="custom-select  mb-3">
                             <option selected>Choose...</option>
                             <option value="1">Option 1</option>
@@ -180,6 +182,8 @@
                             <option value="4">Option 4</option>
                             <option value="5">Option 5</option>
                         </select>
+
+
                         <label class="mr-sm-2" for="inlineFormCustomBHKType">BHK Type*</label>
                         <select name="bhktype" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomBHKType">
                             <option selected>Choose...</option>
@@ -187,7 +191,9 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <label class="mdb-main-label">Property Age*</label>
+
+
+                        <label >Property Age*</label>
                         <select name="propertyage" class="custom-select  mb-3">
                             <option selected>Choose...</option>
                             <option value="2">Option 2</option>
@@ -195,19 +201,22 @@
                             <option value="4">Option 4</option>
                             <option value="5">Option 5</option>
                         </select>
+
+
                         <label for="inlineFormInputpropertysize">Property Size*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="bg-white input-group-text"><i class="fa fa-ruler-combined"></i>
                                 </div>
                             </div>
-                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputpropertysize"
-                                placeholder="Size in sq.ft">
+                            <input name="propertysize" type="text" class="form-control" id="inlineFormInputpropertysize" placeholder="Size in sq.ft">
                         </div>
                         <!--/Blue select-->
+
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-3 ">
                         <div class="">
+
                             <label class="mr-sm-2" for="inlineFormCustomFloor">Floor*</label>
                             <select name="floor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomFloor">
                                 <option selected>Choose...</option>
@@ -215,6 +224,8 @@
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
+
+
                             <label class="mr-sm-2" for="inlineFormCustomTotalFloor">Total Floor*</label>
                             <select name="totalfloor" class="custom-select mr-sm-2 mb-3" id="inlineFormCustomTotalFloor">
                                 <option selected>Choose...</option>
@@ -247,7 +258,7 @@
 
             <div class="col-lg-6">
                 <!--City select-->       
-                <label class="mdb-main-label">City *</label>
+                <label >City *</label>
                         <select name="propertycity" class="custom-select mb-2">
                             <option selected>Choose...</option>
                             <option value="1">Option 1</option>
@@ -261,9 +272,9 @@
                 <label for="inlineFormInputGroupStreetArea">Street Area*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                            <div class="bg-white input-group-text">₹</div>
+                            <div class="bg-white input-group-text"><i class="fas fa-road"></i></div>
                             </div>
-                            <input name="streetarea" type="text" class="form-control " id="inlineFormInputGroupStreetArea" placeholder="Strea/Area">
+                            <input name="streetarea" type="text" class="form-control " id="inlineFormInputGroupStreetArea" placeholder="Street/Area">
                         </div>
             </div>
 
@@ -288,11 +299,11 @@
             <p class="form-head-text">Provide Rental Details About your Property.</p>
             </div>
             <hr class="w-100 py-2 p-0 m-0">
-            <div class="row mx-2 ">
+            <div class="row mx-2">
 
             <div class="col-lg-6">    
                 <!--Property availabe for Radio buttons-->            
-                <label>property available for*</label><br>
+                <label>Property available for *</label><br>
                 <div class="custom-control custom-radio custom-control-inline">
                     <input name="propertyavailablefor" type="radio" class="custom-control-input" id="defaultChecked1">
                     <label class="custom-control-label" for="defaultChecked1">Rental Only</label>
@@ -305,7 +316,7 @@
                 <!--/.Property availabe for Radio buttons-->
 
                 <!--Expected Rent Input-->
-                <label for="inlineFormInputGrouprentpermonth">Expected Rent*</label>
+                <label for="inlineFormInputGrouprentpermonth">Expected Rent *</label>
                 <div class="input-group ">
                     <div class="input-group-prepend">
                     <div class="bg-white input-group-text">₹</div>
@@ -321,55 +332,33 @@
                 </div>
                 <!--/. Negotiation checked -->
 
-                <!--Maintenance Inputs-->
-                <label for="inlineFormInputGroupMaintenance" class="mdb-main-label">Maintenance*</label>
-                    <select name="maintenance" id="inlineFormInputGroupMaintenance" class="custom-select mb-2">
-                    <option selected>Choose...</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
-                    <option value="5">Option 5</option>
-                    </select>
-                <!--End Maintenance Inputs-->
+
             
                 <!--Availble form date input-->
-                <label for="inlineFormInputavailable">Available From*</label>
+                <label for="inlineFormInputavailable">Available From *</label>
                 <div class="input-group mb-3">
                 <input name="availablefor" type="date" name="propertymaintainance" class="form-control" id="inlineFormInputavailable" placeholder="">
                 </div>
                 <!--/.Availble form date input-->
+
             </div>
 
             <!--col end-->
-
-
             <div class="col-lg-6">
-                <!--Locality input-->
-                <label for="inlineFormInputGroupUsername">Locality*</label>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                    <div class="bg-white input-group-text"><i class="fa fa-map-marker-alt"></i>
-                    </div>
-                    </div>
-                    <input name="locality" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="area/landmark">
-                </div>
-                <!--end Locality input-->
 
                 <!--Furnshing Select-->
-                <label for="inlineFormInputFursuing" class="mdb-main-label">Furnishing *</label>
+                <label for="inlineFormInputFursuing" >Furnishing *</label>
                     <select name="furnshing" id="inlineFormInputFursuing" class="custom-select mb-4">
                     <option selected>Choose...</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
-                    <option value="5">Option 5</option>
+                    <option value="Fully Furnished">Fully Furnished</option>
+                    <option value="Semi Furnished">Semi Furnished</option>
+                    <option value="Unfurnished">Unfurnished</option>
+
                     </select>
                 <!--End Furnshing Select-->
 
                 <!--Preferred Tanants-->
-                <label for="inlineFormInputTenants" class="mdb-main-label">Preferred Tenants *</label>
+                <label for="inlineFormInputTenants" >Preferred Tenants *</label>
                     <select name="tenants" id="inlineFormInputTenants" class="custom-select mb-4">
                     <option selected>Choose...</option>
                     <option value="1">Option 1</option>
@@ -381,11 +370,13 @@
                 <!--End Preferred Tanants-->
 
                 <!--Parking Select-->
-                <label for="inlineFormInputParking" class="mdb-main-label">Parking *</label>
+                <label for="inlineFormInputParking" >Parking *</label>
                     <select name="parking" id="inlineFormInputParking" class="custom-select mb-4">
                     <option selected>Choose...</option>
-                    <option value="yes">YES</option>
-                    <option value="no">NO</option>
+                    <option value="BIKE">Bike</option>
+                    <option value="CAR">Car</option>
+                    <option value="BIKE And CAR">Bike and Car</option>
+                    <option value="NONE">None</option>
                     </select>
                 <!--End Parking Select-->
 
@@ -397,7 +388,7 @@
                 <!--Description input-->
                 <div class="form-group">
                 <label for="exampleFormControlTextarea2">Propetry Description</label>
-                <textarea name="description" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                <textarea name="description"class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
                 </div>
                 <!--End Description input-->
             </div>
@@ -417,7 +408,7 @@
                 <div class="file-upload-wrapper">
                 <div class="input-group mb-lg-4 px-lg-5">
                 <div class="input-group-prepend">
-                <span class="input-group-text  mb-1 pb-0 pt-1 px-1">Upload</span>
+                <span class="input-group-text mb-1 pb-0 pt-1 px-1">Upload</span>
                 </div>
                 <div class="custom-file">
                 <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
@@ -443,7 +434,7 @@
                         </center>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <div class="border p-3">
                         <center>
                             <span class="far fa-envelope fa-2x light-blue-text">
@@ -467,100 +458,106 @@
         <hr class="w-100 py-2 p-0 m-0">
         <div class="py-3 px-lg-5 px-3">
             <div class="row">
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-4 mb-2">
                         <label for="inlineFormInputNoBathroom">Bathrooms *</label>
                         <div class="input-group">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend" style="height: 38px;">
                         <div class="bg-white input-group-text"><i class="fa fa-bath"></i></div>
                         </div>
-                        <input name="noofbath" type="number" class="form-control" id="inlineFormInputNoBathroom" placeholder="0">
+                        <select name="noofbath" class="custom-select mb-lg-4 mb-2" id="inlineFormInputNoBathroom">
+                            <option selected disabled>Choose...</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">NO</option>
+                        </select>
+
                         </div>
                     </div>
 
 
-                    <div class="col-lg-4 ">
-                        <label for="inlineFormInputGroupNoBalcony" class="mt-lg-0 mt-4">Balcony *</label>
+                    <div class="col-lg-4">
+                        <label for="inlineFormInputGroupNoBalcony">Balcony *</label>
                         <div class="input-group mb-4 ">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend "style="height: 38px;">
                         <div class="bg-white input-group-text"><i class="fa fa-person-booth"></i>
                         </div>
                         </div>
-                        <input type="number" name="noofbalcony" class="form-control" id="inlineFormInputGroupNoBalcony" placeholder="0">
+                            <select  name="houseowner" class="custom-select mb-lg-4 mb-2" id="inlineFormInputGroupNoBalcony">
+                            <option selected disabled>Choose...</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">NO</option>
+                            </select>
                         </div>
                     </div>
                         
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mb-4">
                         <!--WATER select-->
-                            <label class="mdb-main-label">Water Supply *</label>
-                            <select class="custom-select mb-4">
-                                <option name="watersupply" selected>Choose...</option>
-                                <option value="yes">YES</option>
-                                <option value="no">NO</option>
-                            </select>
+                        <label  for="inlineFormInputWatersupply">Water Supply *</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend" style="height: 38px;">
+                        <div class="bg-white input-group-text"><i class="fa fa-water"></i></div>
+                        </div>
+                        <select name="watersupply" class="custom-select mb-lg-4 mb-2" id="inlineFormInputWatersupply">
+                            <option selected disabled>Choose...</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">NO</option>
+                        </select>
+                        </div>
                     </div>
-                        
-                    <div class="col-lg-4">
-                            <!--Blue select-->
-                            <label class="mdb-main-label">Gym *</label>
-                            <select class="custom-select mb-4">
-                                <option name="gym" selected>Choose...</option>
-                                <option value="yes">YES</option>
-                                <option value="no">NO</option>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <!--GYM select-->
+                        <label  for="inlineFormInputGYM">Gym *</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend" style="height: 38px;">
+                        <div class="bg-white input-group-text"><i class="fas fa-dumbbell"></i></div>
+                        </div>
+                            <select name="gym" class="custom-select  mb-lg-4 mb-2" id="inlineFormInputGYM">
+                                <option  selected disabled>Choose...</option>
+                                <option value="YES">YES</option>
+                                <option value="NO">NO</option>
                             </select>
-                    </div>
-
-
-                    <div class="col-lg-4">
-                            <!--Blue select-->
-                            <label class="mdb-main-label">Non-Veg Allowed *</label>
-                            <select name="non-veg" class="custom-select mb-4">
-                                <option selected>Choose...</option>
-                                <option value="yes">YES</option>
-                                <option value="no">NO</option>
-                            </select>
-                    </div>
-
-
-                    <div class="col-lg-4">
-                            <!--Blue select-->
-                            <label class="mdb-main-label">Gated Security *</label>
-                            <select name="gatedSecurity" class="custom-select mb-4">
-                                <option selected>Choose...</option>
-                                <option value="yes">YES</option>
-                                <option value="no">NO</option>
-                            </select>
+                       </div>
                     </div>
 
 
-                    <div class="col-lg-4">
-                            <label for="inlineFormInputGroupUsername">Secondary Number</label>
+                    <div class="col-lg-4 mb-4 ">
+                            <!--NON-VEG select-->
+
+                            <label  for="inlineFormInputNONVeg">Non-Veg Allowed *</label>
                             <div class="input-group">
-                                <div class="input-group-prepend">
-                                <div class="bg-white input-group-text"><i class="fa fa-phone-alt"></i></div>
-                                </div>
-                                <input name="Secondnumber" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Secondary Mobile">
+                            <div class="input-group-prepend" style="height: 38px;">
+                            <div class="bg-white input-group-text"><i class="fas fa-drumstick-bite"></i></div>
+                            </div>
+                            <select name="non-veg" class="custom-select  mb-lg-4 mb-2" id="inlineFormInputNONVeg">
+                                <option selected selected>Choose...</option>
+                                <option value="yes">YES</option>
+                                <option value="no">NO</option>
+                            </select>
+                            </div>
+                    </div>
+
+
+                    <div class="col-lg-4 mb-4 ">
+                            <!--Gated Security select-->
+                            <label  for="inlineFormInputGatedSecurity">Gated Security *</label>
+                            <div class="input-group">
+                            <div class="input-group-prepend" style="height: 38px;">
+                            <div class="bg-white input-group-text"><i class="fas fa-shield-alt"></i></div>
+                            </div>
+                            <select name="gatedSecurity" class="custom-select  mb-lg-4 mb-2" id="inlineFormInputGatedSecurity">
+                                <option selected>Choose...</option>
+                                <option value="yes">YES</option>
+                                <option value="no">NO</option>
+                            </select>
                             </div>
                     </div>
         
-                    <div class="col-lg-4">
-                            <!--Blue select-->
-                            <label class="mdb-main-label mt-3">Who Will Me Show the House ? *</label>
-                            <select class="custom-select  mb-lg-4 mb-2">
-                                <option name="houseowner" selected>Choose...</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                            </select>
-                    </div>
             </div>
-
-
-
 
                     <hr class="pt-lg-2 "/>
                     <p class="h6 py-2 dark-grey-text">Select the Available Amenities
                     </p>
                     <div class="row px-lg-3 px-1">
-
 
                         <div class="pt-1 col-lg-4 col-6">
                             <div class="form-group form-check">
@@ -725,7 +722,7 @@
 
         <div class="col-lg-6">
            <!--I want to get my house painted select-->
-            <label class="mdb-main-label">I want to get my house painted*</label>
+            <label >I want to get my house painted*</label>
             <select name="wanttopaint" class="custom-select mb-4">
             <option selected>Choose...</option>
             <option value="1">Option 1</option>
@@ -735,7 +732,7 @@
         
         <div class="col-lg-6">
             <!--I want to get my house clean* select-->
-            <label class="mdb-main-label">I want to get my house clean*</label>
+            <label >I want to get my house clean*</label>
             <select class="custom-select mb-4">
             <option name="wanttoclean" selected>Choose...</option>
             <option value="1">Option 1</option>
@@ -746,11 +743,11 @@
 
         <div class="col-lg-6">
             <!--Blue select-->
-            <label class="mdb-main-label">Availablility*</label>
+            <label >Availablility*</label>
             <select name="availability" class="custom-select mb-4">
-            <option selected>Choose...</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
+            <option  selected disabled>Choose...</option>
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
             </select>
         </div>
         <div class="col-lg-6"></div>
@@ -761,7 +758,7 @@
             <div class="input-group-prepend">
             <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
             </div>
-            <input name="starttime" type="number" class="form-control" id="inlineFormInputStarttime" placeholder="0">
+            <input name="starttime" type="time" class="form-control" id="inlineFormInputStarttime" placeholder="Start Time">
             </div>
         </div>
                     
@@ -771,7 +768,7 @@
             <div class="input-group-prepend">
             <div class="bg-white input-group-text"><i class="fa fa-clock"></i></div>
             </div>
-            <input type="number" name="endtime" class="form-control" id="inlineFormInputGroupendtime" placeholder="0">
+            <input type="time" name="endtime" class="form-control" id="inlineFormInputGroupendtime" placeholder="End Time">
             </div>
         </div>
     </div>
